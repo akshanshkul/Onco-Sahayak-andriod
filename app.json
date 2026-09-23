@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Onco Sahayak",
+    "slug": "hopecare",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/images/icon.png",
+    "plugins": [
+      "expo-document-picker",
+      "expo-status-bar",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Onco Sahayak uses your location to show nearby cancer hospitals and the assistance schemes available in your district."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "imageWidth": 260,
+          "resizeMode": "contain",
+          "backgroundColor": "#F5FAFD"
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.hopecare.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#F5FAFD"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.hopecare.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9c58f3b7-4161-4abb-af2f-d8ebab9bf8c3"
+      }
+    }
+  }
+}

@@ -1,0 +1,918 @@
+{"_e":"root:init","_t":1790093269522,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790093269523,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790093269525,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790093277157,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790093285808,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790093289519,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790093319032,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790093353987,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790093353987,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790093354003,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790093354630,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1790093354737,"id":"1","progress":0.04000000000000001,"total":20,"current":4}
+{"_e":"metro:bundling:progress","_t":1790093354846,"id":"1","progress":0.0672153635116598,"total":27,"current":7}
+{"_e":"metro:bundling:progress","_t":1790093354961,"id":"1","progress":0.0672153635116598,"total":52,"current":10}
+{"_e":"metro:bundling:progress","_t":1790093355078,"id":"1","progress":0.0672153635116598,"total":52,"current":12}
+{"_e":"metro:bundling:progress","_t":1790093355189,"id":"1","progress":0.0672153635116598,"total":60,"current":15}
+{"_e":"metro:bundling:progress","_t":1790093355324,"id":"1","progress":0.07111111111111111,"total":60,"current":16}
+{"_e":"metro:bundling:progress","_t":1790093355439,"id":"1","progress":0.08027777777777777,"total":60,"current":17}
+{"_e":"metro:bundling:progress","_t":1790093355479,"id":"1","progress":0.09,"total":60,"current":18}
+{"_e":"metro:bundling:progress","_t":1790093355579,"id":"1","progress":0.09,"total":180,"current":20}
+{"_e":"metro:bundling:progress","_t":1790093355684,"id":"1","progress":0.09,"total":187,"current":28}
+{"_e":"metro:bundling:progress","_t":1790093355794,"id":"1","progress":0.09,"total":190,"current":36}
+{"_e":"metro:bundling:progress","_t":1790093355900,"id":"1","progress":0.09,"total":232,"current":45}
+{"_e":"metro:bundling:progress","_t":1790093356006,"id":"1","progress":0.09,"total":258,"current":58}
+{"_e":"metro:bundling:progress","_t":1790093356114,"id":"1","progress":0.09,"total":297,"current":68}
+{"_e":"metro:bundling:progress","_t":1790093356215,"id":"1","progress":0.09,"total":311,"current":78}
+{"_e":"metro:bundling:progress","_t":1790093356315,"id":"1","progress":0.09,"total":325,"current":86}
+{"_e":"metro:bundling:progress","_t":1790093356418,"id":"1","progress":0.09,"total":332,"current":97}
+{"_e":"metro:bundling:progress","_t":1790093356522,"id":"1","progress":0.10331632653061226,"total":364,"current":117}
+{"_e":"metro:bundling:progress","_t":1790093356633,"id":"1","progress":0.12403433760020088,"total":389,"current":137}
+{"_e":"metro:bundling:progress","_t":1790093356733,"id":"1","progress":0.15405625,"total":400,"current":157}
+{"_e":"metro:bundling:progress","_t":1790093356835,"id":"1","progress":0.16987764791818846,"total":444,"current":183}
+{"_e":"metro:bundling:progress","_t":1790093356944,"id":"1","progress":0.1879666415101504,"total":459,"current":199}
+{"_e":"metro:bundling:progress","_t":1790093357044,"id":"1","progress":0.1958847808369036,"total":479,"current":212}
+{"_e":"metro:bundling:progress","_t":1790093357145,"id":"1","progress":0.22044170136823316,"total":492,"current":231}
+{"_e":"metro:bundling:progress","_t":1790093357245,"id":"1","progress":0.22929363905325445,"total":520,"current":249}
+{"_e":"metro:bundling:progress","_t":1790093357355,"id":"1","progress":0.2565601711695779,"total":537,"current":272}
+{"_e":"metro:bundling:progress","_t":1790093357457,"id":"1","progress":0.29969630774148864,"total":548,"current":300}
+{"_e":"metro:bundling:progress","_t":1790093357559,"id":"1","progress":0.31640625,"total":576,"current":324}
+{"_e":"metro:bundling:progress","_t":1790093357663,"id":"1","progress":0.33558713604477136,"total":599,"current":347}
+{"_e":"metro:bundling:progress","_t":1790093357763,"id":"1","progress":0.34420199561004133,"total":646,"current":379}
+{"_e":"metro:bundling:progress","_t":1790093357864,"id":"1","progress":0.34420199561004133,"total":694,"current":403}
+{"_e":"metro:bundling:progress","_t":1790093357964,"id":"1","progress":0.39842060258538303,"total":705,"current":445}
+{"_e":"metro:bundling:progress","_t":1790093358065,"id":"1","progress":0.4425789923812662,"total":714,"current":475}
+{"_e":"metro:bundling:progress","_t":1790093358178,"id":"1","progress":0.4757560178328895,"total":722,"current":498}
+{"_e":"metro:bundling:progress","_t":1790093358277,"id":"1","progress":0.5166631855652838,"total":729,"current":524}
+{"_e":"metro:bundling:progress","_t":1790093358377,"id":"1","progress":0.5468371722244826,"total":737,"current":545}
+{"_e":"metro:bundling:progress","_t":1790093358477,"id":"1","progress":0.5680356410022062,"total":747,"current":563}
+{"_e":"metro:bundling:progress","_t":1790093358577,"id":"1","progress":0.5938894032488848,"total":763,"current":588}
+{"_e":"metro:bundling:progress","_t":1790093358681,"id":"1","progress":0.6346227415501088,"total":772,"current":615}
+{"_e":"metro:bundling:progress","_t":1790093358787,"id":"1","progress":0.654347032333969,"total":785,"current":635}
+{"_e":"metro:bundling:progress","_t":1790093358888,"id":"1","progress":0.6881456611570249,"total":792,"current":657}
+{"_e":"metro:bundling:progress","_t":1790093358990,"id":"1","progress":0.728319123490606,"total":805,"current":687}
+{"_e":"metro:bundling:progress","_t":1790093359091,"id":"1","progress":0.7332281544695041,"total":835,"current":715}
+{"_e":"metro:bundling:progress","_t":1790093359190,"id":"1","progress":0.7578508922879018,"total":842,"current":733}
+{"_e":"metro:bundling:progress","_t":1790093359292,"id":"1","progress":0.7815885021033406,"total":854,"current":755}
+{"_e":"metro:bundling:progress","_t":1790093359405,"id":"1","progress":0.8068816198336063,"total":865,"current":777}
+{"_e":"metro:bundling:progress","_t":1790093359509,"id":"1","progress":0.83265625,"total":880,"current":803}
+{"_e":"metro:bundling:progress","_t":1790093359609,"id":"1","progress":0.852391604543208,"total":886,"current":818}
+{"_e":"metro:bundling:progress","_t":1790093359712,"id":"1","progress":0.8770802228163551,"total":898,"current":841}
+{"_e":"metro:bundling:progress","_t":1790093359816,"id":"1","progress":0.8770802228163551,"total":933,"current":853}
+{"_e":"metro:bundling:progress","_t":1790093359916,"id":"1","progress":0.8770802228163551,"total":944,"current":871}
+{"_e":"metro:bundling:progress","_t":1790093360021,"id":"1","progress":0.8770802228163551,"total":973,"current":887}
+{"_e":"metro:bundling:progress","_t":1790093360121,"id":"1","progress":0.8770802228163551,"total":1003,"current":903}
+{"_e":"metro:bundling:progress","_t":1790093360221,"id":"1","progress":0.8770802228163551,"total":1028,"current":913}
+{"_e":"metro:bundling:progress","_t":1790093360331,"id":"1","progress":0.8770802228163551,"total":1037,"current":921}
+{"_e":"metro:bundling:progress","_t":1790093360436,"id":"1","progress":0.8770802228163551,"total":1045,"current":929}
+{"_e":"metro:bundling:progress","_t":1790093360540,"id":"1","progress":0.8770802228163551,"total":1051,"current":942}
+{"_e":"metro:bundling:progress","_t":1790093360641,"id":"1","progress":0.8770802228163551,"total":1078,"current":961}
+{"_e":"metro:bundling:progress","_t":1790093360750,"id":"1","progress":0.8770802228163551,"total":1095,"current":976}
+{"_e":"metro:bundling:progress","_t":1790093360853,"id":"1","progress":0.8770802228163551,"total":1123,"current":983}
+{"_e":"metro:bundling:progress","_t":1790093360960,"id":"1","progress":0.8770802228163551,"total":1128,"current":994}
+{"_e":"metro:bundling:progress","_t":1790093361065,"id":"1","progress":0.8770802228163551,"total":1158,"current":1011}
+{"_e":"metro:bundling:progress","_t":1790093361177,"id":"1","progress":0.8770802228163551,"total":1160,"current":1025}
+{"_e":"metro:bundling:progress","_t":1790093361276,"id":"1","progress":0.8770802228163551,"total":1181,"current":1035}
+{"_e":"metro:bundling:progress","_t":1790093361382,"id":"1","progress":0.8770802228163551,"total":1184,"current":1049}
+{"_e":"metro:bundling:progress","_t":1790093361487,"id":"1","progress":0.8770802228163551,"total":1203,"current":1065}
+{"_e":"metro:bundling:progress","_t":1790093361592,"id":"1","progress":0.8770802228163551,"total":1214,"current":1087}
+{"_e":"metro:bundling:progress","_t":1790093361692,"id":"1","progress":0.8770802228163551,"total":1257,"current":1101}
+{"_e":"metro:bundling:progress","_t":1790093361798,"id":"1","progress":0.8770802228163551,"total":1309,"current":1112}
+{"_e":"metro:bundling:progress","_t":1790093361924,"id":"1","progress":0.8770802228163551,"total":1310,"current":1116}
+{"_e":"metro:bundling:progress","_t":1790093362024,"id":"1","progress":0.8770802228163551,"total":1319,"current":1134}
+{"_e":"metro:bundling:progress","_t":1790093362126,"id":"1","progress":0.8770802228163551,"total":1337,"current":1141}
+{"_e":"metro:bundling:progress","_t":1790093362228,"id":"1","progress":0.8770802228163551,"total":1341,"current":1147}
+{"_e":"metro:bundling:progress","_t":1790093362328,"id":"1","progress":0.8770802228163551,"total":1354,"current":1159}
+{"_e":"metro:bundling:progress","_t":1790093362432,"id":"1","progress":0.8770802228163551,"total":1355,"current":1165}
+{"_e":"metro:bundling:progress","_t":1790093362532,"id":"1","progress":0.8770802228163551,"total":1355,"current":1167}
+{"_e":"metro:bundling:progress","_t":1790093362632,"id":"1","progress":0.8770802228163551,"total":1355,"current":1175}
+{"_e":"metro:bundling:progress","_t":1790093362741,"id":"1","progress":0.8770802228163551,"total":1356,"current":1183}
+{"_e":"metro:bundling:progress","_t":1790093362841,"id":"1","progress":0.8770802228163551,"total":1365,"current":1196}
+{"_e":"metro:bundling:progress","_t":1790093362942,"id":"1","progress":0.8770802228163551,"total":1374,"current":1215}
+{"_e":"metro:bundling:progress","_t":1790093363044,"id":"1","progress":0.8770802228163551,"total":1375,"current":1235}
+{"_e":"metro:bundling:progress","_t":1790093363151,"id":"1","progress":0.8770802228163551,"total":1375,"current":1253}
+{"_e":"metro:bundling:progress","_t":1790093363252,"id":"1","progress":0.8770802228163551,"total":1381,"current":1270}
+{"_e":"metro:bundling:progress","_t":1790093363354,"id":"1","progress":0.8770802228163551,"total":1390,"current":1295}
+{"_e":"metro:bundling:progress","_t":1790093363457,"id":"1","progress":0.9035891536194285,"total":1396,"current":1327}
+{"_e":"metro:bundling:progress","_t":1790093363560,"id":"1","progress":0.9112186133852084,"total":1409,"current":1345}
+{"_e":"metro:bundling:progress","_t":1790093363662,"id":"1","progress":0.930673458542778,"total":1417,"current":1367}
+{"_e":"metro:bundling:progress","_t":1790093363769,"id":"1","progress":0.9434404108438568,"total":1429,"current":1388}
+{"_e":"metro:bundling:progress","_t":1790093363937,"id":"1","progress":0.9468580209700559,"total":1448,"current":1409}
+{"_e":"metro:bundling:progress","_t":1790093364037,"id":"1","progress":0.9532619612856099,"total":1480,"current":1445}
+{"_e":"metro:bundling:progress","_t":1790093364140,"id":"1","progress":0.9653359829122061,"total":1487,"current":1461}
+{"_e":"metro:bundling:progress","_t":1790093364241,"id":"1","progress":0.9653359829122061,"total":1526,"current":1484}
+{"_e":"metro:bundling:progress","_t":1790093364342,"id":"1","progress":0.975429325393281,"total":1537,"current":1518}
+{"_e":"metro:bundling:progress","_t":1790093364451,"id":"1","progress":0.999,"total":1544,"current":1544}
+{"_e":"metro:bundling:done","_t":1790093364954,"id":"1","total":1544,"ms":10967.3116}
+{"_e":"metro:client_log","_t":1790093383571,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:bundling:started","_t":1790093685855,"id":"5","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790093685855,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790093686024,"id":"5","total":1,"ms":168.4181}
+{"_e":"root:init","_t":1790093802638,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790093802639,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790093802641,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790093803015,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790093803867,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790093804240,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790093811843,"atlas":false,"workers":8,"host":"::","port":8099}
+{"_e":"metro:bundling:started","_t":1790093821270,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790093833562,"id":"1","total":1579,"ms":12291.6419}
+{"_e":"metro:bundling:started","_t":1790094068733,"id":"7","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790094068734,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790094068737,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790094068848,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790094069001,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790094069109,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790094069216,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790094069449,"id":"7","total":1,"ms":714.9189}
+{"_e":"metro:client_log","_t":1790094083992,"level":"error","data":["[ReferenceError: Property 'ArtPanel' doesn't exist]"]}
+{"_e":"metro:bundling:failed","_t":1790094099675,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\AISupport.tsx: Expected corresponding JSX closing tag for <View>. (166:12)\n\n  164 |                 </View>\n  165 |               </View>\n> 166 |             </ArtPanel>\n      |             ^\n  167 |           </View>\n  168 |\n  169 |           {/* Category grid */}","importStack":null,"filename":"src\\screens\\AISupport.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790094174134,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\AISupport.tsx: Expected corresponding JSX closing tag for <View>. (166:12)\n\n  164 |                 </View>\n  165 |               </View>\n> 166 |             </ArtPanel>\n      |             ^\n  167 |           </View>\n  168 |\n  169 |           {/* Category grid */}","importStack":null,"filename":"src\\screens\\AISupport.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790094181111,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\AISupport.tsx: Expected corresponding JSX closing tag for <View>. (166:12)\n\n  164 |                 </View>\n  165 |               </View>\n> 166 |             </ArtPanel>\n      |             ^\n  167 |           </View>\n  168 |\n  169 |           {/* Category grid */}","importStack":null,"filename":"src\\screens\\AISupport.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1790094306349,"id":"d","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790094306349,"id":"d","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790094306446,"id":"d","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790094306564,"id":"d","progress":0.010000000000000002,"total":3,"current":1}
+{"_e":"metro:bundling:progress","_t":1790094306705,"id":"d","progress":0.0225,"total":20,"current":3}
+{"_e":"metro:bundling:progress","_t":1790094306722,"id":"d","progress":0.04000000000000001,"total":20,"current":4}
+{"_e":"metro:bundling:progress","_t":1790094306839,"id":"d","progress":0.04000000000000001,"total":72,"current":14}
+{"_e":"metro:bundling:progress","_t":1790094306957,"id":"d","progress":0.04000000000000001,"total":171,"current":16}
+{"_e":"metro:bundling:progress","_t":1790094307111,"id":"d","progress":0.04000000000000001,"total":172,"current":17}
+{"_e":"metro:bundling:progress","_t":1790094307211,"id":"d","progress":0.04000000000000001,"total":190,"current":34}
+{"_e":"metro:bundling:progress","_t":1790094307312,"id":"d","progress":0.0667844969069562,"total":267,"current":69}
+{"_e":"metro:bundling:progress","_t":1790094307417,"id":"d","progress":0.08027777777777777,"total":300,"current":85}
+{"_e":"metro:bundling:progress","_t":1790094307517,"id":"d","progress":0.10177274267002898,"total":326,"current":104}
+{"_e":"metro:bundling:progress","_t":1790094307618,"id":"d","progress":0.14619377162629757,"total":374,"current":143}
+{"_e":"metro:bundling:progress","_t":1790094307718,"id":"d","progress":0.18621343535711665,"total":387,"current":167}
+{"_e":"metro:bundling:progress","_t":1790094307846,"id":"d","progress":0.18621343535711665,"total":399,"current":171}
+{"_e":"metro:bundling:progress","_t":1790094307953,"id":"d","progress":0.18621343535711665,"total":451,"current":187}
+{"_e":"metro:bundling:progress","_t":1790094308054,"id":"d","progress":0.21183814460111863,"total":541,"current":249}
+{"_e":"metro:bundling:progress","_t":1790094308154,"id":"d","progress":0.21446931628586707,"total":637,"current":295}
+{"_e":"metro:bundling:progress","_t":1790094308254,"id":"d","progress":0.2599281182931448,"total":712,"current":363}
+{"_e":"metro:bundling:progress","_t":1790094308375,"id":"d","progress":0.28857318489174233,"total":726,"current":390}
+{"_e":"metro:bundling:progress","_t":1790094308475,"id":"d","progress":0.3839138792772011,"total":765,"current":474}
+{"_e":"metro:bundling:progress","_t":1790094308575,"id":"d","progress":0.5372944363549133,"total":809,"current":593}
+{"_e":"metro:bundling:progress","_t":1790094308675,"id":"d","progress":0.6210325839553773,"total":854,"current":673}
+{"_e":"metro:bundling:progress","_t":1790094308790,"id":"d","progress":0.6902951820869987,"total":869,"current":722}
+{"_e":"metro:bundling:progress","_t":1790094308890,"id":"d","progress":0.7445868326858568,"total":919,"current":793}
+{"_e":"metro:bundling:progress","_t":1790094308999,"id":"d","progress":0.8009497916813785,"total":952,"current":852}
+{"_e":"metro:bundling:progress","_t":1790094309102,"id":"d","progress":0.8103781953958055,"total":952,"current":857}
+{"_e":"metro:bundling:progress","_t":1790094309202,"id":"d","progress":0.821465889784856,"total":961,"current":871}
+{"_e":"metro:bundling:progress","_t":1790094309302,"id":"d","progress":0.821465889784856,"total":1063,"current":935}
+{"_e":"metro:bundling:progress","_t":1790094309419,"id":"d","progress":0.821465889784856,"total":1072,"current":954}
+{"_e":"metro:bundling:progress","_t":1790094309520,"id":"d","progress":0.821465889784856,"total":1165,"current":1028}
+{"_e":"metro:bundling:progress","_t":1790094309628,"id":"d","progress":0.821465889784856,"total":1181,"current":1064}
+{"_e":"metro:bundling:progress","_t":1790094309739,"id":"d","progress":0.821465889784856,"total":1181,"current":1066}
+{"_e":"metro:bundling:progress","_t":1790094309840,"id":"d","progress":0.821465889784856,"total":1229,"current":1101}
+{"_e":"metro:bundling:progress","_t":1790094309942,"id":"d","progress":0.8350178359096315,"total":1276,"current":1166}
+{"_e":"metro:bundling:progress","_t":1790094310060,"id":"d","progress":0.8509592948920391,"total":1277,"current":1178}
+{"_e":"metro:bundling:progress","_t":1790094310168,"id":"d","progress":0.8509592948920391,"total":1303,"current":1200}
+{"_e":"metro:bundling:progress","_t":1790094310270,"id":"d","progress":0.8748578212448415,"total":1330,"current":1244}
+{"_e":"metro:bundling:progress","_t":1790094310384,"id":"d","progress":0.9149338374291116,"total":1334,"current":1276}
+{"_e":"metro:bundling:progress","_t":1790094310486,"id":"d","progress":0.9163684649429409,"total":1334,"current":1277}
+{"_e":"metro:bundling:progress","_t":1790094310589,"id":"d","progress":0.94513697000358,"total":1366,"current":1328}
+{"_e":"metro:bundling:progress","_t":1790094310689,"id":"d","progress":0.9523362957833179,"total":1368,"current":1335}
+{"_e":"metro:bundling:progress","_t":1790094310816,"id":"d","progress":0.9523362957833179,"total":1406,"current":1368}
+{"_e":"metro:bundling:progress","_t":1790094310866,"id":"d","progress":0.9523362957833179,"total":1406,"current":1369}
+{"_e":"metro:bundling:progress","_t":1790094310991,"id":"d","progress":0.959990287608202,"total":1435,"current":1406}
+{"_e":"metro:bundling:progress","_t":1790094311065,"id":"d","progress":0.9613563355145747,"total":1435,"current":1407}
+{"_e":"metro:bundling:progress","_t":1790094311176,"id":"d","progress":0.9613563355145747,"total":1467,"current":1435}
+{"_e":"metro:bundling:progress","_t":1790094311246,"id":"d","progress":0.9613563355145747,"total":1467,"current":1436}
+{"_e":"metro:bundling:progress","_t":1790094311359,"id":"d","progress":0.9905245881116189,"total":1474,"current":1467}
+{"_e":"metro:bundling:progress","_t":1790094311424,"id":"d","progress":0.9918754568099432,"total":1474,"current":1468}
+{"_e":"metro:bundling:progress","_t":1790094311573,"id":"d","progress":0.999,"total":1475,"current":1475}
+{"_e":"metro:bundling:done","_t":1790094311974,"id":"d","total":1475,"ms":5625.0282}
+{"_e":"root:init","_t":1790094391302,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790094391303,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790094391305,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790094391678,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790094392423,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790094392754,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790094406891,"atlas":false,"workers":8,"host":"::","port":8090}
+{"_e":"metro:bundling:started","_t":1790094413643,"id":"1","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790094432818,"id":"1","total":672,"ms":19174.7073}
+{"_e":"metro:client_log","_t":1790094433361,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790094433364,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790094433427,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790094445026,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790094484892,"id":"7","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790094484955,"id":"7","total":1,"ms":63.1667}
+{"_e":"metro:client_log","_t":1790094485580,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790094485583,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790094485604,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790094510442,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790094526449,"id":"f","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790094526484,"id":"f","total":1,"ms":35.5007}
+{"_e":"metro:client_log","_t":1790094526648,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790094526649,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790094526669,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790094529420,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790094541624,"id":"m","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790094541653,"id":"m","total":1,"ms":28.6598}
+{"_e":"metro:client_log","_t":1790094541834,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790094541834,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790094541862,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790094546492,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790094559513,"id":"u","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790094559618,"id":"u","total":1,"ms":105.4886}
+{"_e":"metro:client_log","_t":1790094559923,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790094559923,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790094559947,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790094592162,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:failed","_t":1790094632480,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Expected corresponding JSX closing tag for <ScrollView>. (167:10)\n\n  165 |               </View>\n  166 |             </View>\n> 167 |           </View>\n      |           ^\n  168 |\n  169 |           {/* Illustration footer — bleeds to the screen edges, as in the design.\n  170 |               It already carries the \"You Are Not Alone\" script and the quote. */}","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790094632483,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Expected corresponding JSX closing tag for <ScrollView>. (167:10)\n\n  165 |               </View>\n  166 |             </View>\n> 167 |           </View>\n      |           ^\n  168 |\n  169 |           {/* Illustration footer — bleeds to the screen edges, as in the design.\n  170 |               It already carries the \"You Are Not Alone\" script and the quote. */}]"]}
+{"_e":"metro:client_log","_t":1790094638030,"level":"warn","data":["An error occurred in the <Login> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1790094638058,"level":"error","data":["[ReferenceError: ScrollView is not defined]","\n\nCode: Login.tsx\n\u001b[0m \u001b[90m 53 |\u001b[39m           {\u001b[90m/* Everything between the header and the illustration. flexGrow keeps\u001b[39m\n \u001b[90m 54 |\u001b[39m \u001b[90m              it centred when it fits and only scrolls if the screen is short. */\u001b[39m}\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mScrollView\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m             className\u001b[33m=\u001b[39m\u001b[32m\"flex-1\"\u001b[39m\n \u001b[90m 57 |\u001b[39m             contentContainerStyle\u001b[33m=\u001b[39m{{\n \u001b[90m 58 |\u001b[39m               flexGrow\u001b[33m:\u001b[39m \u001b[35m1\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\nCall Stack\n  Login (src\\screens\\Login.tsx:55:12)","\n\nCode: App.tsx\n\u001b[0m \u001b[90m 33 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mNavigationContainer\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mStatusBar\u001b[39m style\u001b[33m=\u001b[39m\u001b[32m\"dark\"\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mNavigator\u001b[39m screenOptions\u001b[33m=\u001b[39m{{ headerShown\u001b[33m:\u001b[39m \u001b[36mfalse\u001b[39m }}\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 36 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Welcome\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mWelcome\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 37 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Login\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mLogin\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 38 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Signup\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mSignup\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\nCall Stack\n  App (App.tsx:35:9)"]}
+{"_e":"metro:bundling:started","_t":1790094666887,"id":"18","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790094666925,"id":"18","total":1,"ms":37.7025}
+{"_e":"metro:client_log","_t":1790094667210,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790094667211,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790094667221,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790094675176,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790094739392,"id":"1f","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790094739428,"id":"1f","total":1,"ms":36.434}
+{"_e":"metro:client_log","_t":1790094739803,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790094739803,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790094739822,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790094743310,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790094791154,"id":"1n","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790094791191,"id":"1n","total":1,"ms":36.5837}
+{"_e":"metro:client_log","_t":1790094791493,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790094791495,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790094791506,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790094793704,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790095044165,"id":"1x","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790095044239,"id":"1x","total":1,"ms":73.5272}
+{"_e":"metro:client_log","_t":1790095044760,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790095044761,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790095044772,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790095052256,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790095175295,"id":"26","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790095175334,"id":"26","total":1,"ms":38.0969}
+{"_e":"metro:client_log","_t":1790095175606,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790095175608,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790095175619,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790095184040,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790095225463,"id":"g","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790095225464,"id":"g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790095225466,"id":"g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790095225609,"id":"g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790095225767,"id":"g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790095225873,"id":"g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790095226064,"id":"g","total":1,"ms":600.1041}
+{"_e":"root:init","_t":1790095247967,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790095247968,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790095247970,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790095248271,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790095248984,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790095249245,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790095256585,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790095342814,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790095342814,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790095342898,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790095343586,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1790095343768,"id":"1","progress":0.010000000000000002,"total":3,"current":1}
+{"_e":"metro:bundling:progress","_t":1790095343817,"id":"1","progress":0.04000000000000001,"total":3,"current":2}
+{"_e":"metro:bundling:progress","_t":1790095343927,"id":"1","progress":0.04591836734693877,"total":14,"current":3}
+{"_e":"metro:bundling:progress","_t":1790095344036,"id":"1","progress":0.1111111111111111,"total":15,"current":5}
+{"_e":"metro:bundling:progress","_t":1790095344137,"id":"1","progress":0.19140625,"total":16,"current":7}
+{"_e":"metro:bundling:progress","_t":1790095344251,"id":"1","progress":0.19140625,"total":32,"current":9}
+{"_e":"metro:bundling:progress","_t":1790095344373,"id":"1","progress":0.19140625,"total":34,"current":11}
+{"_e":"metro:bundling:progress","_t":1790095344453,"id":"1","progress":0.19140625,"total":34,"current":12}
+{"_e":"metro:bundling:progress","_t":1790095344567,"id":"1","progress":0.19140625,"total":34,"current":14}
+{"_e":"metro:bundling:progress","_t":1790095344678,"id":"1","progress":0.19463667820069203,"total":34,"current":15}
+{"_e":"metro:bundling:progress","_t":1790095344780,"id":"1","progress":0.25,"total":34,"current":17}
+{"_e":"metro:bundling:progress","_t":1790095344882,"id":"1","progress":0.25,"total":48,"current":21}
+{"_e":"metro:bundling:progress","_t":1790095345017,"id":"1","progress":0.25,"total":56,"current":26}
+{"_e":"metro:bundling:progress","_t":1790095345121,"id":"1","progress":0.25,"total":204,"current":38}
+{"_e":"metro:bundling:progress","_t":1790095345227,"id":"1","progress":0.25,"total":209,"current":39}
+{"_e":"metro:bundling:progress","_t":1790095345340,"id":"1","progress":0.25,"total":228,"current":51}
+{"_e":"metro:bundling:progress","_t":1790095345456,"id":"1","progress":0.25,"total":233,"current":58}
+{"_e":"metro:bundling:progress","_t":1790095345569,"id":"1","progress":0.25,"total":250,"current":64}
+{"_e":"metro:bundling:progress","_t":1790095345669,"id":"1","progress":0.25,"total":254,"current":71}
+{"_e":"metro:bundling:progress","_t":1790095345781,"id":"1","progress":0.25,"total":264,"current":78}
+{"_e":"metro:bundling:progress","_t":1790095345889,"id":"1","progress":0.25,"total":265,"current":83}
+{"_e":"metro:bundling:progress","_t":1790095345997,"id":"1","progress":0.25,"total":289,"current":98}
+{"_e":"metro:bundling:progress","_t":1790095346098,"id":"1","progress":0.25,"total":307,"current":114}
+{"_e":"metro:bundling:progress","_t":1790095346210,"id":"1","progress":0.25,"total":326,"current":128}
+{"_e":"metro:bundling:progress","_t":1790095346326,"id":"1","progress":0.25,"total":339,"current":148}
+{"_e":"metro:bundling:progress","_t":1790095346427,"id":"1","progress":0.25,"total":346,"current":158}
+{"_e":"metro:bundling:progress","_t":1790095346565,"id":"1","progress":0.25,"total":382,"current":168}
+{"_e":"metro:bundling:progress","_t":1790095346680,"id":"1","progress":0.25,"total":387,"current":171}
+{"_e":"metro:bundling:progress","_t":1790095346840,"id":"1","progress":0.25,"total":396,"current":178}
+{"_e":"metro:bundling:progress","_t":1790095347013,"id":"1","progress":0.25,"total":428,"current":185}
+{"_e":"metro:bundling:progress","_t":1790095347113,"id":"1","progress":0.25,"total":439,"current":191}
+{"_e":"metro:bundling:progress","_t":1790095347217,"id":"1","progress":0.25,"total":447,"current":195}
+{"_e":"metro:bundling:progress","_t":1790095347322,"id":"1","progress":0.25,"total":483,"current":202}
+{"_e":"metro:bundling:progress","_t":1790095347470,"id":"1","progress":0.25,"total":488,"current":209}
+{"_e":"metro:bundling:progress","_t":1790095347608,"id":"1","progress":0.25,"total":514,"current":212}
+{"_e":"metro:bundling:progress","_t":1790095347712,"id":"1","progress":0.25,"total":516,"current":214}
+{"_e":"metro:bundling:progress","_t":1790095347829,"id":"1","progress":0.25,"total":517,"current":217}
+{"_e":"metro:bundling:progress","_t":1790095347957,"id":"1","progress":0.25,"total":520,"current":226}
+{"_e":"metro:bundling:progress","_t":1790095348057,"id":"1","progress":0.25,"total":524,"current":234}
+{"_e":"metro:bundling:progress","_t":1790095348222,"id":"1","progress":0.25,"total":532,"current":241}
+{"_e":"metro:bundling:progress","_t":1790095348329,"id":"1","progress":0.25,"total":534,"current":244}
+{"_e":"metro:bundling:progress","_t":1790095348429,"id":"1","progress":0.25,"total":545,"current":255}
+{"_e":"metro:bundling:progress","_t":1790095348550,"id":"1","progress":0.25,"total":551,"current":263}
+{"_e":"metro:bundling:progress","_t":1790095348687,"id":"1","progress":0.25,"total":559,"current":270}
+{"_e":"metro:bundling:progress","_t":1790095348806,"id":"1","progress":0.25,"total":562,"current":277}
+{"_e":"metro:bundling:progress","_t":1790095348948,"id":"1","progress":0.25,"total":587,"current":288}
+{"_e":"metro:bundling:progress","_t":1790095349051,"id":"1","progress":0.25,"total":597,"current":296}
+{"_e":"metro:bundling:progress","_t":1790095349183,"id":"1","progress":0.2541219420784565,"total":609,"current":307}
+{"_e":"metro:bundling:progress","_t":1790095349286,"id":"1","progress":0.2623846033068188,"total":613,"current":314}
+{"_e":"metro:bundling:progress","_t":1790095349401,"id":"1","progress":0.26805671175858475,"total":620,"current":321}
+{"_e":"metro:bundling:progress","_t":1790095349523,"id":"1","progress":0.27000830521799346,"total":637,"current":331}
+{"_e":"metro:bundling:progress","_t":1790095349643,"id":"1","progress":0.27718092798012434,"total":642,"current":338}
+{"_e":"metro:bundling:progress","_t":1790095349759,"id":"1","progress":0.27989600576083196,"total":654,"current":346}
+{"_e":"metro:bundling:progress","_t":1790095349870,"id":"1","progress":0.2878045287829935,"total":658,"current":353}
+{"_e":"metro:bundling:progress","_t":1790095350022,"id":"1","progress":0.3006749664570422,"total":662,"current":363}
+{"_e":"metro:bundling:progress","_t":1790095350172,"id":"1","progress":0.31069678078878427,"total":662,"current":369}
+{"_e":"metro:bundling:progress","_t":1790095350300,"id":"1","progress":0.3140007240566719,"total":671,"current":376}
+{"_e":"metro:bundling:progress","_t":1790095350401,"id":"1","progress":0.31838264652683995,"total":677,"current":382}
+{"_e":"metro:bundling:progress","_t":1790095350529,"id":"1","progress":0.32438278287376554,"total":683,"current":389}
+{"_e":"metro:bundling:progress","_t":1790095350633,"id":"1","progress":0.3270047038155042,"total":689,"current":394}
+{"_e":"metro:bundling:progress","_t":1790095350756,"id":"1","progress":0.3270047038155042,"total":693,"current":396}
+{"_e":"metro:bundling:progress","_t":1790095350905,"id":"1","progress":0.33360582639714625,"total":696,"current":402}
+{"_e":"metro:bundling:progress","_t":1790095351027,"id":"1","progress":0.3399992610898104,"total":698,"current":407}
+{"_e":"metro:bundling:progress","_t":1790095351171,"id":"1","progress":0.34277522098034924,"total":702,"current":411}
+{"_e":"metro:bundling:progress","_t":1790095351308,"id":"1","progress":0.3471980354549029,"total":706,"current":416}
+{"_e":"metro:bundling:progress","_t":1790095351410,"id":"1","progress":0.3572855893234036,"total":706,"current":422}
+{"_e":"metro:bundling:progress","_t":1790095351517,"id":"1","progress":0.3733607549479943,"total":707,"current":432}
+{"_e":"metro:bundling:progress","_t":1790095351617,"id":"1","progress":0.3767419738406659,"total":725,"current":445}
+{"_e":"metro:bundling:progress","_t":1790095351718,"id":"1","progress":0.3767419738406659,"total":776,"current":454}
+{"_e":"metro:bundling:progress","_t":1790095351820,"id":"1","progress":0.3767419738406659,"total":777,"current":461}
+{"_e":"metro:bundling:progress","_t":1790095351932,"id":"1","progress":0.3767419738406659,"total":785,"current":475}
+{"_e":"metro:bundling:progress","_t":1790095352035,"id":"1","progress":0.3767419738406659,"total":796,"current":488}
+{"_e":"metro:bundling:progress","_t":1790095352135,"id":"1","progress":0.3767419738406659,"total":842,"current":502}
+{"_e":"metro:bundling:progress","_t":1790095352244,"id":"1","progress":0.3767419738406659,"total":848,"current":516}
+{"_e":"metro:bundling:progress","_t":1790095352364,"id":"1","progress":0.3867697186879596,"total":849,"current":528}
+{"_e":"metro:bundling:progress","_t":1790095352469,"id":"1","progress":0.3940967990970101,"total":857,"current":538}
+{"_e":"metro:bundling:progress","_t":1790095352570,"id":"1","progress":0.40174738744496613,"total":863,"current":547}
+{"_e":"metro:bundling:progress","_t":1790095352670,"id":"1","progress":0.4148483933771046,"total":871,"current":561}
+{"_e":"metro:bundling:progress","_t":1790095352777,"id":"1","progress":0.4253954798219804,"total":877,"current":572}
+{"_e":"metro:bundling:progress","_t":1790095352877,"id":"1","progress":0.44850327675759255,"total":878,"current":588}
+{"_e":"metro:bundling:progress","_t":1790095352979,"id":"1","progress":0.47158385953429766,"total":881,"current":605}
+{"_e":"metro:bundling:progress","_t":1790095353082,"id":"1","progress":0.48529226107814677,"total":890,"current":620}
+{"_e":"metro:bundling:progress","_t":1790095353186,"id":"1","progress":0.5090581997222572,"total":890,"current":635}
+{"_e":"metro:bundling:progress","_t":1790095353298,"id":"1","progress":0.5303991547660974,"total":898,"current":654}
+{"_e":"metro:bundling:progress","_t":1790095353448,"id":"1","progress":0.5447455718827643,"total":901,"current":665}
+{"_e":"metro:bundling:progress","_t":1790095353549,"id":"1","progress":0.5583866682767782,"total":910,"current":680}
+{"_e":"metro:bundling:progress","_t":1790095353648,"id":"1","progress":0.5612791647656739,"total":921,"current":690}
+{"_e":"metro:bundling:progress","_t":1790095353759,"id":"1","progress":0.5870069578626635,"total":928,"current":711}
+{"_e":"metro:bundling:progress","_t":1790095353859,"id":"1","progress":0.5870069578626635,"total":952,"current":725}
+{"_e":"metro:bundling:progress","_t":1790095353962,"id":"1","progress":0.6056616655870871,"total":956,"current":744}
+{"_e":"metro:bundling:progress","_t":1790095354062,"id":"1","progress":0.631012983730022,"total":958,"current":761}
+{"_e":"metro:bundling:progress","_t":1790095354166,"id":"1","progress":0.6604733406170514,"total":961,"current":781}
+{"_e":"metro:bundling:progress","_t":1790095354284,"id":"1","progress":0.69531006535694,"total":963,"current":803}
+{"_e":"metro:bundling:progress","_t":1790095354388,"id":"1","progress":0.7281307629260296,"total":968,"current":826}
+{"_e":"metro:bundling:progress","_t":1790095354509,"id":"1","progress":0.7591057240828517,"total":971,"current":846}
+{"_e":"metro:bundling:progress","_t":1790095354612,"id":"1","progress":0.7772761349437735,"total":980,"current":864}
+{"_e":"metro:bundling:progress","_t":1790095354720,"id":"1","progress":0.7953249137887849,"total":989,"current":882}
+{"_e":"metro:bundling:progress","_t":1790095354830,"id":"1","progress":0.8132497459849559,"total":998,"current":900}
+{"_e":"metro:bundling:progress","_t":1790095354936,"id":"1","progress":0.8304060898063537,"total":1003,"current":914}
+{"_e":"metro:bundling:progress","_t":1790095355036,"id":"1","progress":0.8304060898063537,"total":1038,"current":927}
+{"_e":"metro:bundling:progress","_t":1790095355138,"id":"1","progress":0.8304060898063537,"total":1039,"current":940}
+{"_e":"metro:bundling:progress","_t":1790095355239,"id":"1","progress":0.8356192820931181,"total":1048,"current":958}
+{"_e":"metro:bundling:progress","_t":1790095355381,"id":"1","progress":0.8404223230452658,"total":1057,"current":969}
+{"_e":"metro:bundling:progress","_t":1790095355483,"id":"1","progress":0.8503400342850305,"total":1066,"current":983}
+{"_e":"metro:bundling:progress","_t":1790095355595,"id":"1","progress":0.8508912608098463,"total":1083,"current":999}
+{"_e":"metro:bundling:progress","_t":1790095355700,"id":"1","progress":0.8508912608098463,"total":1110,"current":1015}
+{"_e":"metro:bundling:progress","_t":1790095355813,"id":"1","progress":0.8508912608098463,"total":1135,"current":1023}
+{"_e":"metro:bundling:progress","_t":1790095355918,"id":"1","progress":0.8508912608098463,"total":1147,"current":1029}
+{"_e":"metro:bundling:progress","_t":1790095356026,"id":"1","progress":0.8508912608098463,"total":1150,"current":1037}
+{"_e":"metro:bundling:progress","_t":1790095356131,"id":"1","progress":0.8508912608098463,"total":1158,"current":1046}
+{"_e":"metro:bundling:progress","_t":1790095356244,"id":"1","progress":0.8508912608098463,"total":1160,"current":1058}
+{"_e":"metro:bundling:progress","_t":1790095356353,"id":"1","progress":0.8508912608098463,"total":1165,"current":1071}
+{"_e":"metro:bundling:progress","_t":1790095356453,"id":"1","progress":0.8605522861023087,"total":1175,"current":1090}
+{"_e":"metro:bundling:progress","_t":1790095356609,"id":"1","progress":0.8605522861023087,"total":1181,"current":1095}
+{"_e":"metro:bundling:progress","_t":1790095356709,"id":"1","progress":0.8605522861023087,"total":1195,"current":1108}
+{"_e":"metro:bundling:progress","_t":1790095356811,"id":"1","progress":0.8605522861023087,"total":1221,"current":1119}
+{"_e":"metro:bundling:progress","_t":1790095356922,"id":"1","progress":0.8605522861023087,"total":1223,"current":1129}
+{"_e":"metro:bundling:progress","_t":1790095357040,"id":"1","progress":0.8605522861023087,"total":1246,"current":1142}
+{"_e":"metro:bundling:progress","_t":1790095357141,"id":"1","progress":0.8605522861023087,"total":1254,"current":1158}
+{"_e":"metro:bundling:progress","_t":1790095357248,"id":"1","progress":0.8721029824923414,"total":1255,"current":1172}
+{"_e":"metro:bundling:progress","_t":1790095357348,"id":"1","progress":0.8721029824923414,"total":1272,"current":1186}
+{"_e":"metro:bundling:progress","_t":1790095357458,"id":"1","progress":0.8872042960403579,"total":1274,"current":1200}
+{"_e":"metro:bundling:progress","_t":1790095357566,"id":"1","progress":0.8872042960403579,"total":1293,"current":1210}
+{"_e":"metro:bundling:progress","_t":1790095357666,"id":"1","progress":0.8872042960403579,"total":1305,"current":1221}
+{"_e":"metro:bundling:progress","_t":1790095357776,"id":"1","progress":0.8885262043179888,"total":1307,"current":1232}
+{"_e":"metro:bundling:progress","_t":1790095357893,"id":"1","progress":0.8928587108788004,"total":1307,"current":1235}
+{"_e":"metro:bundling:progress","_t":1790095358008,"id":"1","progress":0.89575290253353,"total":1307,"current":1237}
+{"_e":"metro:bundling:progress","_t":1790095358119,"id":"1","progress":0.9073765007326217,"total":1307,"current":1245}
+{"_e":"metro:bundling:progress","_t":1790095358219,"id":"1","progress":0.9208391814767996,"total":1312,"current":1259}
+{"_e":"metro:bundling:progress","_t":1790095358326,"id":"1","progress":0.9311588549446075,"total":1313,"current":1267}
+{"_e":"metro:bundling:progress","_t":1790095358432,"id":"1","progress":0.9444762990299989,"total":1314,"current":1277}
+{"_e":"metro:bundling:progress","_t":1790095358539,"id":"1","progress":0.9593569373563301,"total":1315,"current":1288}
+{"_e":"metro:bundling:progress","_t":1790095358642,"id":"1","progress":0.9613132147298342,"total":1331,"current":1305}
+{"_e":"metro:bundling:progress","_t":1790095358747,"id":"1","progress":0.9613132147298342,"total":1358,"current":1321}
+{"_e":"metro:bundling:progress","_t":1790095358862,"id":"1","progress":0.9613132147298342,"total":1380,"current":1347}
+{"_e":"metro:bundling:progress","_t":1790095358963,"id":"1","progress":0.9613132147298342,"total":1394,"current":1365}
+{"_e":"metro:bundling:progress","_t":1790095359065,"id":"1","progress":0.9613132147298342,"total":1422,"current":1387}
+{"_e":"metro:bundling:progress","_t":1790095359165,"id":"1","progress":0.9708044982698963,"total":1428,"current":1407}
+{"_e":"metro:bundling:progress","_t":1790095359265,"id":"1","progress":0.9806500771604939,"total":1440,"current":1426}
+{"_e":"metro:bundling:progress","_t":1790095359365,"id":"1","progress":0.9972279985610984,"total":1442,"current":1440}
+{"_e":"metro:bundling:progress","_t":1790095359470,"id":"1","progress":0.999,"total":1442,"current":1442}
+{"_e":"metro:bundling:done","_t":1790095359860,"id":"1","total":1442,"ms":17045.8898}
+{"_e":"root:init","_t":1790124620467,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790124620469,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790124620471,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790124620875,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790124621852,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790124622201,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790124631738,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790124652128,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790124652129,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790124652160,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790124652923,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1790124653023,"id":"1","progress":0.010000000000000002,"total":3,"current":1}
+{"_e":"metro:bundling:progress","_t":1790124653037,"id":"1","progress":0.04000000000000001,"total":3,"current":2}
+{"_e":"metro:bundling:progress","_t":1790124653146,"id":"1","progress":0.04000000000000001,"total":18,"current":3}
+{"_e":"metro:bundling:progress","_t":1790124653219,"id":"1","progress":0.04938271604938271,"total":18,"current":4}
+{"_e":"metro:bundling:progress","_t":1790124653376,"id":"1","progress":0.04938271604938271,"total":23,"current":4}
+{"_e":"metro:bundling:progress","_t":1790124653385,"id":"1","progress":0.04938271604938271,"total":23,"current":5}
+{"_e":"metro:bundling:progress","_t":1790124653498,"id":"1","progress":0.0576,"total":25,"current":6}
+{"_e":"metro:bundling:progress","_t":1790124653651,"id":"1","progress":0.07840000000000001,"total":25,"current":7}
+{"_e":"metro:bundling:progress","_t":1790124653767,"id":"1","progress":0.09467455621301776,"total":26,"current":8}
+{"_e":"metro:bundling:progress","_t":1790124653889,"id":"1","progress":0.09467455621301776,"total":48,"current":10}
+{"_e":"metro:bundling:progress","_t":1790124653990,"id":"1","progress":0.09467455621301776,"total":60,"current":13}
+{"_e":"metro:bundling:progress","_t":1790124654110,"id":"1","progress":0.09467455621301776,"total":60,"current":14}
+{"_e":"metro:bundling:progress","_t":1790124654211,"id":"1","progress":0.09467455621301776,"total":178,"current":15}
+{"_e":"metro:bundling:progress","_t":1790124654285,"id":"1","progress":0.09467455621301776,"total":178,"current":16}
+{"_e":"metro:bundling:progress","_t":1790124654387,"id":"1","progress":0.09467455621301776,"total":180,"current":19}
+{"_e":"metro:bundling:progress","_t":1790124654495,"id":"1","progress":0.09467455621301776,"total":187,"current":25}
+{"_e":"metro:bundling:progress","_t":1790124654595,"id":"1","progress":0.09467455621301776,"total":195,"current":36}
+{"_e":"metro:bundling:progress","_t":1790124654695,"id":"1","progress":0.09467455621301776,"total":207,"current":45}
+{"_e":"metro:bundling:progress","_t":1790124654799,"id":"1","progress":0.09467455621301776,"total":247,"current":55}
+{"_e":"metro:bundling:progress","_t":1790124654903,"id":"1","progress":0.09467455621301776,"total":250,"current":65}
+{"_e":"metro:bundling:progress","_t":1790124655016,"id":"1","progress":0.09467455621301776,"total":263,"current":75}
+{"_e":"metro:bundling:progress","_t":1790124655127,"id":"1","progress":0.09467455621301776,"total":278,"current":82}
+{"_e":"metro:bundling:progress","_t":1790124655231,"id":"1","progress":0.09467455621301776,"total":280,"current":83}
+{"_e":"metro:bundling:progress","_t":1790124655331,"id":"1","progress":0.09467455621301776,"total":296,"current":91}
+{"_e":"metro:bundling:progress","_t":1790124655434,"id":"1","progress":0.12127305576253715,"total":313,"current":109}
+{"_e":"metro:bundling:progress","_t":1790124655535,"id":"1","progress":0.1463292930759181,"total":332,"current":127}
+{"_e":"metro:bundling:progress","_t":1790124655636,"id":"1","progress":0.17954610744039068,"total":354,"current":150}
+{"_e":"metro:bundling:progress","_t":1790124655738,"id":"1","progress":0.19555061740865132,"total":398,"current":176}
+{"_e":"metro:bundling:progress","_t":1790124655838,"id":"1","progress":0.20923390223832442,"total":411,"current":188}
+{"_e":"metro:bundling:progress","_t":1790124655942,"id":"1","progress":0.21234364509340387,"total":421,"current":194}
+{"_e":"metro:bundling:progress","_t":1790124656042,"id":"1","progress":0.23845423181063852,"total":428,"current":209}
+{"_e":"metro:bundling:progress","_t":1790124656148,"id":"1","progress":0.2710683023314536,"total":436,"current":227}
+{"_e":"metro:bundling:progress","_t":1790124656251,"id":"1","progress":0.28382372571079884,"total":458,"current":244}
+{"_e":"metro:bundling:progress","_t":1790124656353,"id":"1","progress":0.3117361111111111,"total":480,"current":268}
+{"_e":"metro:bundling:progress","_t":1790124656459,"id":"1","progress":0.3127307003487605,"total":515,"current":288}
+{"_e":"metro:bundling:progress","_t":1790124656559,"id":"1","progress":0.3127307003487605,"total":553,"current":308}
+{"_e":"metro:bundling:progress","_t":1790124656659,"id":"1","progress":0.3407817062948744,"total":579,"current":338}
+{"_e":"metro:bundling:progress","_t":1790124656759,"id":"1","progress":0.3723408284279779,"total":608,"current":371}
+{"_e":"metro:bundling:progress","_t":1790124656860,"id":"1","progress":0.4323221831031864,"total":619,"current":407}
+{"_e":"metro:bundling:progress","_t":1790124656960,"id":"1","progress":0.4323221831031864,"total":675,"current":431}
+{"_e":"metro:bundling:progress","_t":1790124657062,"id":"1","progress":0.4510141180502384,"total":679,"current":456}
+{"_e":"metro:bundling:progress","_t":1790124657176,"id":"1","progress":0.47603973989817133,"total":687,"current":474}
+{"_e":"metro:bundling:progress","_t":1790124657277,"id":"1","progress":0.49179395761712147,"total":703,"current":493}
+{"_e":"metro:bundling:progress","_t":1790124657381,"id":"1","progress":0.5197878965403783,"total":706,"current":509}
+{"_e":"metro:bundling:progress","_t":1790124657485,"id":"1","progress":0.5453254437869823,"total":715,"current":528}
+{"_e":"metro:bundling:progress","_t":1790124657585,"id":"1","progress":0.5744263796310136,"total":727,"current":551}
+{"_e":"metro:bundling:progress","_t":1790124657686,"id":"1","progress":0.6240571823062404,"total":738,"current":583}
+{"_e":"metro:bundling:progress","_t":1790124657802,"id":"1","progress":0.6656278905075732,"total":744,"current":607}
+{"_e":"metro:bundling:progress","_t":1790124657902,"id":"1","progress":0.6656278905075732,"total":796,"current":631}
+{"_e":"metro:bundling:progress","_t":1790124658002,"id":"1","progress":0.6707221466300707,"total":801,"current":656}
+{"_e":"metro:bundling:progress","_t":1790124658126,"id":"1","progress":0.6707221466300707,"total":826,"current":676}
+{"_e":"metro:bundling:progress","_t":1790124658229,"id":"1","progress":0.6901161424954135,"total":833,"current":692}
+{"_e":"metro:bundling:progress","_t":1790124658329,"id":"1","progress":0.7066317818705926,"total":847,"current":712}
+{"_e":"metro:bundling:progress","_t":1790124658430,"id":"1","progress":0.7369871071440786,"total":855,"current":734}
+{"_e":"metro:bundling:progress","_t":1790124658535,"id":"1","progress":0.742340249757546,"total":867,"current":747}
+{"_e":"metro:bundling:progress","_t":1790124658636,"id":"1","progress":0.7601783721803159,"total":882,"current":769}
+{"_e":"metro:bundling:progress","_t":1790124658740,"id":"1","progress":0.8031072769797553,"total":886,"current":794}
+{"_e":"metro:bundling:progress","_t":1790124658839,"id":"1","progress":0.8390806183216734,"total":893,"current":818}
+{"_e":"metro:bundling:progress","_t":1790124658939,"id":"1","progress":0.8525444444444444,"total":900,"current":831}
+{"_e":"metro:bundling:progress","_t":1790124659042,"id":"1","progress":0.8525444444444444,"total":936,"current":843}
+{"_e":"metro:bundling:progress","_t":1790124659142,"id":"1","progress":0.8525444444444444,"total":946,"current":855}
+{"_e":"metro:bundling:progress","_t":1790124659244,"id":"1","progress":0.8525444444444444,"total":975,"current":878}
+{"_e":"metro:bundling:progress","_t":1790124659344,"id":"1","progress":0.8525444444444444,"total":984,"current":895}
+{"_e":"metro:bundling:progress","_t":1790124659444,"id":"1","progress":0.8525444444444444,"total":1011,"current":907}
+{"_e":"metro:bundling:progress","_t":1790124659545,"id":"1","progress":0.8525444444444444,"total":1035,"current":917}
+{"_e":"metro:bundling:progress","_t":1790124659652,"id":"1","progress":0.8525444444444444,"total":1048,"current":923}
+{"_e":"metro:bundling:progress","_t":1790124659751,"id":"1","progress":0.8525444444444444,"total":1051,"current":928}
+{"_e":"metro:bundling:progress","_t":1790124659851,"id":"1","progress":0.8525444444444444,"total":1056,"current":936}
+{"_e":"metro:bundling:progress","_t":1790124659951,"id":"1","progress":0.8525444444444444,"total":1060,"current":947}
+{"_e":"metro:bundling:progress","_t":1790124660053,"id":"1","progress":0.8525444444444444,"total":1086,"current":961}
+{"_e":"metro:bundling:progress","_t":1790124660158,"id":"1","progress":0.8525444444444444,"total":1102,"current":981}
+{"_e":"metro:bundling:progress","_t":1790124660258,"id":"1","progress":0.8525444444444444,"total":1141,"current":1001}
+{"_e":"metro:bundling:progress","_t":1790124660358,"id":"1","progress":0.8525444444444444,"total":1149,"current":1005}
+{"_e":"metro:bundling:progress","_t":1790124660462,"id":"1","progress":0.8525444444444444,"total":1159,"current":1016}
+{"_e":"metro:bundling:progress","_t":1790124660568,"id":"1","progress":0.8525444444444444,"total":1161,"current":1027}
+{"_e":"metro:bundling:progress","_t":1790124660670,"id":"1","progress":0.8525444444444444,"total":1182,"current":1037}
+{"_e":"metro:bundling:progress","_t":1790124660771,"id":"1","progress":0.8525444444444444,"total":1184,"current":1047}
+{"_e":"metro:bundling:progress","_t":1790124660872,"id":"1","progress":0.8525444444444444,"total":1188,"current":1063}
+{"_e":"metro:bundling:progress","_t":1790124660972,"id":"1","progress":0.8525444444444444,"total":1209,"current":1079}
+{"_e":"metro:bundling:progress","_t":1790124661110,"id":"1","progress":0.8525444444444444,"total":1214,"current":1089}
+{"_e":"metro:bundling:progress","_t":1790124661231,"id":"1","progress":0.8525444444444444,"total":1221,"current":1109}
+{"_e":"metro:bundling:progress","_t":1790124661331,"id":"1","progress":0.8525444444444444,"total":1235,"current":1121}
+{"_e":"metro:bundling:progress","_t":1790124661432,"id":"1","progress":0.8525444444444444,"total":1239,"current":1131}
+{"_e":"metro:bundling:progress","_t":1790124661541,"id":"1","progress":0.8525444444444444,"total":1254,"current":1136}
+{"_e":"metro:bundling:progress","_t":1790124661648,"id":"1","progress":0.8525444444444444,"total":1259,"current":1149}
+{"_e":"metro:bundling:progress","_t":1790124661747,"id":"1","progress":0.8525444444444444,"total":1274,"current":1161}
+{"_e":"metro:bundling:progress","_t":1790124661853,"id":"1","progress":0.8525444444444444,"total":1274,"current":1169}
+{"_e":"metro:bundling:progress","_t":1790124661953,"id":"1","progress":0.8525444444444444,"total":1274,"current":1172}
+{"_e":"metro:bundling:progress","_t":1790124662057,"id":"1","progress":0.8535207223814535,"total":1274,"current":1177}
+{"_e":"metro:bundling:progress","_t":1790124662160,"id":"1","progress":0.8623489427143406,"total":1275,"current":1184}
+{"_e":"metro:bundling:progress","_t":1790124662266,"id":"1","progress":0.8735338915047919,"total":1285,"current":1201}
+{"_e":"metro:bundling:progress","_t":1790124662368,"id":"1","progress":0.8844435113458213,"total":1293,"current":1216}
+{"_e":"metro:bundling:progress","_t":1790124662470,"id":"1","progress":0.8933534085657638,"total":1295,"current":1224}
+{"_e":"metro:bundling:progress","_t":1790124662573,"id":"1","progress":0.906749983974397,"total":1298,"current":1236}
+{"_e":"metro:bundling:progress","_t":1790124662675,"id":"1","progress":0.933503525048136,"total":1301,"current":1257}
+{"_e":"metro:bundling:progress","_t":1790124662777,"id":"1","progress":0.933503525048136,"total":1321,"current":1273}
+{"_e":"metro:bundling:progress","_t":1790124662878,"id":"1","progress":0.9366646572125211,"total":1336,"current":1293}
+{"_e":"metro:bundling:progress","_t":1790124662978,"id":"1","progress":0.9473392969890665,"total":1349,"current":1313}
+{"_e":"metro:bundling:progress","_t":1790124663081,"id":"1","progress":0.955481404482501,"total":1377,"current":1346}
+{"_e":"metro:bundling:progress","_t":1790124663181,"id":"1","progress":0.955481404482501,"total":1405,"current":1369}
+{"_e":"metro:bundling:progress","_t":1790124663281,"id":"1","progress":0.969146324713756,"total":1415,"current":1393}
+{"_e":"metro:bundling:progress","_t":1790124663382,"id":"1","progress":0.9888502613342085,"total":1431,"current":1423}
+{"_e":"metro:bundling:progress","_t":1790124663487,"id":"1","progress":0.999,"total":1433,"current":1433}
+{"_e":"metro:bundling:progress","_t":1790124663595,"id":"1","progress":0.999,"total":1442,"current":1442}
+{"_e":"metro:bundling:done","_t":1790124663841,"id":"1","total":1442,"ms":11712.5316}
+{"_e":"metro:client_log","_t":1790124935977,"level":"error","data":["[TypeError: '' is not a function]"]}
+{"_e":"metro:bundling:failed","_t":1790124938788,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Unterminated template. (1:3)\n\n> 1 | ```tsx\n    |    ^\n  2 | import React, { useState } from \"react\";\n  3 | import {\n  4 |   View,","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790124938983,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Unterminated template. (1:3)\n\n> 1 | ```tsx\n    |    ^\n  2 | import React, { useState } from \"react\";\n  3 | import {\n  4 |   View,","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790125089332,"level":"error","data":["[ReferenceError: Property 'ScreenWash' doesn't exist]"]}
+{"_e":"metro:bundling:failed","_t":1790125094604,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Expected corresponding JSX closing tag for <LinearGradient>. (178:4)\n\n  176 |         </KeyboardAvoidingView>\n  177 |       </SafeAreaView>\n> 178 |     </ScreenWash>\n      |     ^\n  179 |   );\n  180 | }\n  181 |","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790125095148,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Expected corresponding JSX closing tag for <LinearGradient>. (178:4)\n\n  176 |         </KeyboardAvoidingView>\n  177 |       </SafeAreaView>\n> 178 |     </ScreenWash>\n      |     ^\n  179 |   );\n  180 | }\n  181 |","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790125095202,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Expected corresponding JSX closing tag for <LinearGradient>. (178:4)\n\n  176 |         </KeyboardAvoidingView>\n  177 |       </SafeAreaView>\n> 178 |     </ScreenWash>\n      |     ^\n  179 |   );\n  180 | }\n  181 |","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790125095231,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Expected corresponding JSX closing tag for <LinearGradient>. (178:4)\n\n  176 |         </KeyboardAvoidingView>\n  177 |       </SafeAreaView>\n> 178 |     </ScreenWash>\n      |     ^\n  179 |   );\n  180 | }\n  181 |","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790125095273,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Expected corresponding JSX closing tag for <LinearGradient>. (178:4)\n\n  176 |         </KeyboardAvoidingView>\n  177 |       </SafeAreaView>\n> 178 |     </ScreenWash>\n      |     ^\n  179 |   );\n  180 | }\n  181 |","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790125099685,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Expected corresponding JSX closing tag for <LinearGradient>. (178:4)\n\n  176 |         </KeyboardAvoidingView>\n  177 |       </SafeAreaView>\n> 178 |     </ScreenWash>\n      |     ^\n  179 |   );\n  180 | }\n  181 |","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1790125122463,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790125122464,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790125122466,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790125122872,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790125123580,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790125123907,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790125135115,"atlas":false,"workers":8,"host":"::","port":8090}
+{"_e":"metro:bundling:started","_t":1790125141038,"id":"1","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:started","_t":1790125155679,"id":"2","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790125176036,"id":"1","total":1,"ms":34997.6467}
+{"_e":"metro:bundling:done","_t":1790125176333,"id":"2","total":1,"ms":20654.243}
+{"_e":"metro:client_log","_t":1790125176568,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790125176569,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790125176642,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790125176756,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790125176756,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790125176763,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:bundling:started","_t":1790125193018,"id":"e","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790125193084,"id":"e","total":1,"ms":66.3615}
+{"_e":"metro:client_log","_t":1790125193478,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790125193479,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790125193494,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790125198459,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1790125202454,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1790125202468,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:bundling:started","_t":1790125219736,"id":"m","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790125219830,"id":"m","total":1,"ms":93.9184}
+{"_e":"metro:client_log","_t":1790125220130,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790125220131,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790125220153,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790125224482,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790125254335,"id":"v","platform":"web","environment":null,"entry":"src\\components\\ui.tsx"}
+{"_e":"metro:bundling:started","_t":1790125289674,"id":"x","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125292907,"id":"y","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125298828,"id":"z","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125299327,"id":"10","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125303349,"id":"11","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125306943,"id":"12","platform":"web","environment":null,"entry":"src\\components\\ui.tsx"}
+{"_e":"metro:bundling:started","_t":1790125308000,"id":"13","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:failed","_t":1790125310849,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Unexpected token (182:81)\n\n  180 |             <LinearGradient\n  181 |               colors={[loginHeroTop, \"rgba(245,250,253,0)\"]}\n> 182 |               style={{ position: \"absolute\", left: 0, right: 0, top: 0, height:  }}\n      |                                                                                  ^\n  183 |               pointerEvents=\"none\"\n  184 |             />\n  185 |           </View>","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790125310917,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Unexpected token (182:81)\n\n  180 |             <LinearGradient\n  181 |               colors={[loginHeroTop, \"rgba(245,250,253,0)\"]}\n> 182 |               style={{ position: \"absolute\", left: 0, right: 0, top: 0, height:  }}\n      |                                                                                  ^\n  183 |               pointerEvents=\"none\"\n  184 |             />\n  185 |           </View>","importStack":null,"filename":"src\\screens\\Login.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790125310921,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Unexpected token (182:81)\n\n  180 |             <LinearGradient\n  181 |               colors={[loginHeroTop, \"rgba(245,250,253,0)\"]}\n> 182 |               style={{ position: \"absolute\", left: 0, right: 0, top: 0, height:  }}\n      |                                                                                  ^\n  183 |               pointerEvents=\"none\"\n  184 |             />\n  185 |           </View>]"]}
+{"_e":"metro:client_log","_t":1790125310924,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Login.tsx: Unexpected token (182:81)\n\n  180 |             <LinearGradient\n  181 |               colors={[loginHeroTop, \"rgba(245,250,253,0)\"]}\n> 182 |               style={{ position: \"absolute\", left: 0, right: 0, top: 0, height:  }}\n      |                                                                                  ^\n  183 |               pointerEvents=\"none\"\n  184 |             />\n  185 |           </View>]"]}
+{"_e":"metro:bundling:started","_t":1790125312151,"id":"14","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125318477,"id":"15","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125333589,"id":"16","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125339123,"id":"17","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125344105,"id":"18","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125348832,"id":"19","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125351321,"id":"1a","platform":"web","environment":null,"entry":"src\\components\\ui.tsx"}
+{"_e":"metro:bundling:started","_t":1790125356692,"id":"1b","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125362048,"id":"1c","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125366340,"id":"1d","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125371810,"id":"1e","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125385014,"id":"1f","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125389010,"id":"1g","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125392627,"id":"1h","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790125418918,"id":"1i","platform":"web","environment":null,"entry":"src\\components\\ui.tsx"}
+{"_e":"metro:bundling:failed","_t":1790125682336,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Identifier 'useState' has already been declared. (2:9)\n\n  1 | import React, { useState } from \"react\";\n> 2 | import { useState } from \"react\";\n    |          ^\n  3 |\n  4 | import { View, Text, ScrollView, Pressable } from \"react-native\";\n  5 | import { SafeAreaView } from \"react-native-safe-area-context\";","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790125682451,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Identifier 'useState' has already been declared. (2:9)\n\n  1 | import React, { useState } from \"react\";\n> 2 | import { useState } from \"react\";\n    |          ^\n  3 |\n  4 | import { View, Text, ScrollView, Pressable } from \"react-native\";\n  5 | import { SafeAreaView } from \"react-native-safe-area-context\";","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790125682472,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Identifier 'useState' has already been declared. (2:9)\n\n  1 | import React, { useState } from \"react\";\n> 2 | import { useState } from \"react\";\n    |          ^\n  3 |\n  4 | import { View, Text, ScrollView, Pressable } from \"react-native\";\n  5 | import { SafeAreaView } from \"react-native-safe-area-context\";]"]}
+{"_e":"metro:client_log","_t":1790125682492,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Identifier 'useState' has already been declared. (2:9)\n\n  1 | import React, { useState } from \"react\";\n> 2 | import { useState } from \"react\";\n    |          ^\n  3 |\n  4 | import { View, Text, ScrollView, Pressable } from \"react-native\";\n  5 | import { SafeAreaView } from \"react-native-safe-area-context\";]"]}
+{"_e":"metro:bundling:started","_t":1790125685328,"id":"1j","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125686620,"id":"1k","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125696637,"id":"1l","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125707804,"id":"1m","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125710399,"id":"1n","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125711311,"id":"1o","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125719374,"id":"1p","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125734135,"id":"1r","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:client_log","_t":1790125734642,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:bundling:started","_t":1790125735979,"id":"1s","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125793034,"id":"1t","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:client_log","_t":1790125793159,"level":"warn","data":["DateTimePicker: `onChange` is deprecated. Use `onValueChange`, `onDismiss`, and `onNeutralButtonPress` instead."]}
+{"_e":"metro:bundling:started","_t":1790125817976,"id":"1u","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:client_log","_t":1790125818024,"level":"warn","data":["An error occurred in the <Signup> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1790125818117,"level":"error","data":["[ReferenceError: Property 'gender' doesn't exist]"]}
+{"_e":"metro:client_log","_t":1790125818146,"level":"error","data":["[ReferenceError: gender is not defined]","\n\nCode: Signup.tsx\n\u001b[0m \u001b[90m 155 |\u001b[39m                       required\n \u001b[90m 156 |\u001b[39m                       icon\u001b[33m=\u001b[39m\u001b[32m\"person-outline\"\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 157 |\u001b[39m                       placeholder\u001b[33m=\u001b[39m{gender \u001b[33m||\u001b[39m \u001b[32m\"Select\"\u001b[39m}\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 158 |\u001b[39m                     \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 159 |\u001b[39m                   \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mView\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 160 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mPressable\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\nCall Stack\n  Signup (src\\screens\\Signup.tsx:157:36)","\n\nCode: App.tsx\n\u001b[0m \u001b[90m 33 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mNavigationContainer\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mStatusBar\u001b[39m style\u001b[33m=\u001b[39m\u001b[32m\"dark\"\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mNavigator\u001b[39m screenOptions\u001b[33m=\u001b[39m{{ headerShown\u001b[33m:\u001b[39m \u001b[36mfalse\u001b[39m }}\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 36 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Welcome\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mWelcome\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 37 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Login\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mLogin\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 38 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Signup\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mSignup\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\nCall Stack\n  App (App.tsx:35:9)"]}
+{"_e":"metro:client_log","_t":1790125818625,"level":"warn","data":["An error occurred in the <Signup> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1790125818674,"level":"error","data":["[ReferenceError: gender is not defined]","\n\nCode: Signup.tsx\n\u001b[0m \u001b[90m 155 |\u001b[39m                       required\n \u001b[90m 156 |\u001b[39m                       icon\u001b[33m=\u001b[39m\u001b[32m\"person-outline\"\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 157 |\u001b[39m                       placeholder\u001b[33m=\u001b[39m{gender \u001b[33m||\u001b[39m \u001b[32m\"Select\"\u001b[39m}\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 158 |\u001b[39m                     \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 159 |\u001b[39m                   \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mView\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 160 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mPressable\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\nCall Stack\n  Signup (src\\screens\\Signup.tsx:157:36)","\n\nCode: App.tsx\n\u001b[0m \u001b[90m 33 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mNavigationContainer\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mStatusBar\u001b[39m style\u001b[33m=\u001b[39m\u001b[32m\"dark\"\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mNavigator\u001b[39m screenOptions\u001b[33m=\u001b[39m{{ headerShown\u001b[33m:\u001b[39m \u001b[36mfalse\u001b[39m }}\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 36 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Welcome\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mWelcome\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 37 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Login\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mLogin\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 38 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Signup\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mSignup\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\nCall Stack\n  App (App.tsx:35:9)"]}
+{"_e":"metro:bundling:started","_t":1790125921661,"id":"23","platform":"web","environment":null,"entry":"src\\components\\ui.tsx"}
+{"_e":"metro:bundling:started","_t":1790125926617,"id":"24","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790125995419,"id":"25","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790126010783,"id":"26","platform":"web","environment":null,"entry":"src\\data\\state.tsx"}
+{"_e":"metro:bundling:started","_t":1790126010784,"id":"27","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790126070430,"id":"28","platform":"web","environment":null,"entry":"src\\data\\options.tsx"}
+{"_e":"metro:bundling:started","_t":1790126070439,"id":"29","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790126100322,"id":"2a","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790126107064,"id":"2b","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790126117145,"id":"2c","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790126119338,"id":"2d","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790126122379,"id":"2e","platform":"web","environment":null,"entry":"src\\components\\pickers.tsx"}
+{"_e":"metro:bundling:started","_t":1790126122380,"id":"2f","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790126127875,"id":"2g","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790126127903,"id":"2h","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790126130219,"id":"2i","platform":"web","environment":null,"entry":"src\\screens\\Login.tsx"}
+{"_e":"metro:bundling:started","_t":1790126140778,"id":"c","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790126140778,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790126140780,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790126140894,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790126141006,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790126141151,"id":"c","total":1,"ms":372.7976}
+{"_e":"metro:bundling:started","_t":1790126154257,"id":"2j","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790126154338,"id":"2j","total":1,"ms":80.4974}
+{"_e":"metro:client_log","_t":1790126155987,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790126155988,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790126156123,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790126161255,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1790126161256,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1790126368905,"level":"error","data":["[ReferenceError: Property 'textSize' doesn't exist]"]}
+{"_e":"metro:client_log","_t":1790126369091,"level":"warn","data":["An error occurred in the <Field> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1790126369486,"level":"error","data":["[ReferenceError: textSize is not defined]","\n\nCode: ui.tsx\n\u001b[0m \u001b[90m 269 |\u001b[39m             color\u001b[33m:\u001b[39m colors\u001b[33m.\u001b[39mdark\u001b[33m,\u001b[39m\n \u001b[90m 270 |\u001b[39m             minWidth\u001b[33m:\u001b[39m \u001b[35m0\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 271 |\u001b[39m             fontSize\u001b[33m:\u001b[39m textSize \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m (dense \u001b[33m?\u001b[39m \u001b[35m12.5\u001b[39m \u001b[33m:\u001b[39m \u001b[35m15\u001b[39m)\u001b[33m,\u001b[39m\n \u001b[90m     |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 272 |\u001b[39m             paddingVertical\u001b[33m:\u001b[39m dense \u001b[33m?\u001b[39m \u001b[35m12\u001b[39m \u001b[33m:\u001b[39m \u001b[35m14\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 273 |\u001b[39m           }}\n \u001b[90m 274 |\u001b[39m           {\u001b[33m...\u001b[39minputProps}\u001b[0m\nCall Stack\n  Field (src\\components\\ui.tsx:271:23)","\n\nCode: Signup.tsx\n\u001b[0m \u001b[90m 130 |\u001b[39m               \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mView\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 131 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 132 |\u001b[39m               \u001b[33m<\u001b[39m\u001b[33mField\u001b[39m\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 133 |\u001b[39m                 label\u001b[33m=\u001b[39m\u001b[32m\"Full Name\"\u001b[39m\n \u001b[90m 134 |\u001b[39m                 required\n \u001b[90m 135 |\u001b[39m                 icon\u001b[33m=\u001b[39m\u001b[32m\"person-outline\"\u001b[39m\u001b[0m\nCall Stack\n  Signup (src\\screens\\Signup.tsx:132:15)\n  App (App.tsx:35:9)"]}
+{"_e":"metro:bundling:started","_t":1790126469553,"id":"g","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790126469553,"id":"g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790126469554,"id":"g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790126469668,"id":"g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790126469737,"id":"g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790126469874,"id":"g","total":1,"ms":320.7406}
+{"_e":"metro:bundling:started","_t":1790126747843,"id":"2u","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790126747943,"id":"2u","total":1,"ms":99.3003}
+{"_e":"metro:client_log","_t":1790126750516,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790126750516,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790126750752,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:bundling:started","_t":1790126751078,"id":"31","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790126751153,"id":"31","total":1,"ms":75.0223}
+{"_e":"metro:client_log","_t":1790126756146,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1790126756147,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:bundling:started","_t":1790126809916,"id":"33","platform":"web","environment":null,"entry":"src\\components\\pickers.tsx"}
+{"_e":"metro:bundling:started","_t":1790126812418,"id":"34","platform":"web","environment":null,"entry":"src\\components\\pickers.tsx"}
+{"_e":"metro:bundling:started","_t":1790126816603,"id":"35","platform":"web","environment":null,"entry":"src\\components\\pickers.tsx"}
+{"_e":"metro:bundling:started","_t":1790126820069,"id":"36","platform":"web","environment":null,"entry":"src\\components\\pickers.tsx"}
+{"_e":"metro:bundling:started","_t":1790126831323,"id":"37","platform":"web","environment":null,"entry":"src\\components\\pickers.tsx"}
+{"_e":"metro:bundling:started","_t":1790126834017,"id":"38","platform":"web","environment":null,"entry":"src\\components\\pickers.tsx"}
+{"_e":"metro:bundling:started","_t":1790126846681,"id":"39","platform":"web","environment":null,"entry":"src\\components\\pickers.tsx"}
+{"_e":"metro:client_log","_t":1790126847466,"level":"error","data":["[ReferenceError: Property 'useSafeAreaInsets' doesn't exist]"]}
+{"_e":"metro:client_log","_t":1790126848278,"level":"error","data":["[ReferenceError: useSafeAreaInsets is not defined]","\n\nCode: pickers.tsx\n\u001b[0m \u001b[90m 20 |\u001b[39m   footer\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mReact\u001b[39m\u001b[33m.\u001b[39m\u001b[33mReactNode\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m }) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m   \u001b[36mconst\u001b[39m insets \u001b[33m=\u001b[39m useSafeAreaInsets()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36mreturn\u001b[39m (\n \u001b[90m 25 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33mModal\u001b[39m\u001b[0m\nCall Stack\n  Sheet (src\\components\\pickers.tsx:22:18)","\n\nCode: pickers.tsx\n\u001b[0m \u001b[90m 80 |\u001b[39m   value\u001b[33m,\u001b[39m\n \u001b[90m 81 |\u001b[39m   onSelect\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m   onClose\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m   searchable\u001b[33m,\u001b[39m\n \u001b[90m 84 |\u001b[39m }\u001b[33m:\u001b[39m {\n \u001b[90m 85 |\u001b[39m   visible\u001b[33m:\u001b[39m boolean\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  OptionSheet (src\\components\\pickers.tsx:82:10)\n  Signup (src\\screens\\Signup.tsx:309:9)\n  App (App.tsx:35:9)"]}
+{"_e":"metro:client_log","_t":1790126848381,"level":"warn","data":["An error occurred in the <Sheet> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:bundling:started","_t":1790126852545,"id":"3c","platform":"web","environment":null,"entry":"src\\components\\pickers.tsx"}
+{"_e":"metro:bundling:started","_t":1790126891621,"id":"3f","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790126897684,"id":"3g","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790126897745,"id":"3g","total":1,"ms":60.3963}
+{"_e":"metro:client_log","_t":1790126899844,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790126899844,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790126900007,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790126905083,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1790126905083,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:bundling:started","_t":1790126963172,"id":"3n","platform":"web","environment":null,"entry":"src\\data\\options.tsx"}
+{"_e":"metro:bundling:started","_t":1790126982979,"id":"3o","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790127005466,"id":"3q","platform":"web","environment":null,"entry":"src\\screens\\HospitalDetails.tsx"}
+{"_e":"metro:bundling:started","_t":1790127007419,"id":"3r","platform":"web","environment":null,"entry":"src\\screens\\HospitalDetails.tsx"}
+{"_e":"metro:bundling:started","_t":1790127010545,"id":"3s","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790127013650,"id":"3t","platform":"web","environment":null,"entry":"src\\screens\\HospitalDetails.tsx"}
+{"_e":"metro:bundling:started","_t":1790127015571,"id":"3u","platform":"web","environment":null,"entry":"src\\screens\\HospitalDetails.tsx"}
+{"_e":"metro:bundling:started","_t":1790127018902,"id":"3v","platform":"web","environment":null,"entry":"src\\screens\\Signup.tsx"}
+{"_e":"metro:bundling:started","_t":1790127037758,"id":"3w","platform":"web","environment":null,"entry":"src\\screens\\HospitalDetails.tsx"}
+{"_e":"metro:bundling:started","_t":1790127039761,"id":"3x","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790127039831,"id":"3x","total":1,"ms":69.4325}
+{"_e":"metro:client_log","_t":1790127043009,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790127043009,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790127043215,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790127056205,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1790127056205,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:bundling:started","_t":1790127062318,"id":"44","platform":"web","environment":null,"entry":"src\\screens\\HospitalDetails.tsx"}
+{"_e":"metro:bundling:started","_t":1790127064646,"id":"45","platform":"web","environment":null,"entry":"src\\screens\\HospitalDetails.tsx"}
+{"_e":"metro:bundling:started","_t":1790127071070,"id":"46","platform":"web","environment":null,"entry":"src\\screens\\HospitalDetails.tsx"}
+{"_e":"metro:client_log","_t":1790127666326,"level":"error","data":["[ReferenceError: Property 'hospitalTabs' doesn't exist]"]}
+{"_e":"metro:bundling:started","_t":1790127666564,"id":"47","platform":"web","environment":null,"entry":"src\\screens\\HospitalDetails.tsx"}
+{"_e":"metro:client_log","_t":1790127666710,"level":"warn","data":["An error occurred in the <HospitalDetails> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1790127667045,"level":"error","data":["[ReferenceError: hospitalTabs is not defined]","\n\nCode: HospitalDetails.tsx\n\u001b[0m \u001b[90m 183 |\u001b[39m }) {\n \u001b[90m 184 |\u001b[39m   \u001b[36mconst\u001b[39m h\u001b[33m:\u001b[39m \u001b[33mHospital\u001b[39m \u001b[33m=\u001b[39m route\u001b[33m.\u001b[39mparams\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mhospital\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 185 |\u001b[39m   \u001b[36mconst\u001b[39m [tab\u001b[33m,\u001b[39m setTab] \u001b[33m=\u001b[39m useState(hospitalTabs[\u001b[35m0\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 186 |\u001b[39m   \u001b[36mconst\u001b[39m [saved\u001b[33m,\u001b[39m setSaved] \u001b[33m=\u001b[39m useState(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 187 |\u001b[39m\n \u001b[90m 188 |\u001b[39m   \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mh) {\u001b[0m\nCall Stack\n  HospitalDetails (src\\screens\\HospitalDetails.tsx:185:34)","\n\nCode: App.tsx\n\u001b[0m \u001b[90m 33 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mNavigationContainer\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mStatusBar\u001b[39m style\u001b[33m=\u001b[39m\u001b[32m\"dark\"\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mNavigator\u001b[39m screenOptions\u001b[33m=\u001b[39m{{ headerShown\u001b[33m:\u001b[39m \u001b[36mfalse\u001b[39m }}\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 36 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Welcome\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mWelcome\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 37 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Login\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mLogin\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 38 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mStack\u001b[39m\u001b[33m.\u001b[39m\u001b[33mScreen\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"Signup\"\u001b[39m component\u001b[33m=\u001b[39m{\u001b[33mSignup\u001b[39m} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\nCall Stack\n  App (App.tsx:35:9)"]}
+{"_e":"metro:bundling:started","_t":1790127668297,"id":"4a","platform":"web","environment":null,"entry":"src\\screens\\HospitalDetails.tsx"}
+{"_e":"metro:bundling:started","_t":1790127793957,"id":"4e","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790127794071,"id":"4e","total":1,"ms":112.2289}
+{"_e":"metro:client_log","_t":1790127797148,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790127797149,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790127797678,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790127812114,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790127875164,"id":"4m","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790127875257,"id":"4m","total":1,"ms":91.0106}
+{"_e":"metro:client_log","_t":1790127878157,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790127878158,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790127878378,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:bundling:failed","_t":1790128390761,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (46:42)\n\n  44 | }\n  45 |\n> 46 | function GroupHeading({ icon, title,text= }: { icon: any; title: string; text: string }) {\n     |                                           ^\n  47 |   return (\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790128391086,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (46:42)\n\n  44 | }\n  45 |\n> 46 | function GroupHeading({ icon, title,text= }: { icon: any; title: string; text: string }) {\n     |                                           ^\n  47 |   return (\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790128391211,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (46:42)\n\n  44 | }\n  45 |\n> 46 | function GroupHeading({ icon, title,text= }: { icon: any; title: string; text: string }) {\n     |                                           ^\n  47 |   return (\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />]"]}
+{"_e":"metro:bundling:failed","_t":1790128400118,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unterminated string constant. (46:41)\n\n  44 | }\n  45 |\n> 46 | function GroupHeading({ icon, title,text='17 }: { icon: any; title: string; text: string }) {\n     |                                          ^\n  47 |   return (\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790128400473,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unterminated string constant. (46:41)\n\n  44 | }\n  45 |\n> 46 | function GroupHeading({ icon, title,text='17 }: { icon: any; title: string; text: string }) {\n     |                                          ^\n  47 |   return (\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790128400543,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unterminated string constant. (46:41)\n\n  44 | }\n  45 |\n> 46 | function GroupHeading({ icon, title,text='17 }: { icon: any; title: string; text: string }) {\n     |                                          ^\n  47 |   return (\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />]"]}
+{"_e":"metro:bundling:failed","_t":1790128401624,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unterminated string constant. (46:41)\n\n  44 | }\n  45 |\n> 46 | function GroupHeading({ icon, title,text=\"17 }: { icon: any; title: string; text: string }) {\n     |                                          ^\n  47 |   return (\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790128401975,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unterminated string constant. (46:41)\n\n  44 | }\n  45 |\n> 46 | function GroupHeading({ icon, title,text=\"17 }: { icon: any; title: string; text: string }) {\n     |                                          ^\n  47 |   return (\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790128402026,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unterminated string constant. (46:41)\n\n  44 | }\n  45 |\n> 46 | function GroupHeading({ icon, title,text=\"17 }: { icon: any; title: string; text: string }) {\n     |                                          ^\n  47 |   return (\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />]"]}
+{"_e":"metro:bundling:failed","_t":1790128421796,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:43)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"text px] font-bold\" style={{ color: colors.navy }}>\n     |                                            ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790128422070,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:43)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"text px] font-bold\" style={{ color: colors.navy }}>\n     |                                            ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790128422141,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:43)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"text px] font-bold\" style={{ color: colors.navy }}>\n     |                                            ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>]"]}
+{"_e":"metro:bundling:failed","_t":1790128423735,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:36)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"+text px] font-bold\" style={{ color: colors.navy }}>\n     |                                     ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790128424080,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:36)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"+text px] font-bold\" style={{ color: colors.navy }}>\n     |                                     ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790128424142,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:36)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"+text px] font-bold\" style={{ color: colors.navy }}>\n     |                                     ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>]"]}
+{"_e":"metro:bundling:failed","_t":1790128425944,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:36)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"+text \"px] font-bold\" style={{ color: colors.navy }}>\n     |                                     ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790128426232,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:36)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"+text \"px] font-bold\" style={{ color: colors.navy }}>\n     |                                     ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790128426292,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:36)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"+text \"px] font-bold\" style={{ color: colors.navy }}>\n     |                                     ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>]"]}
+{"_e":"metro:bundling:failed","_t":1790128428192,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:36)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"+text+ \"px] font-bold\" style={{ color: colors.navy }}>\n     |                                     ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1790128428498,"id":null,"message":"SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:36)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"+text+ \"px] font-bold\" style={{ color: colors.navy }}>\n     |                                     ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>","importStack":null,"filename":"src\\screens\\Signup.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1790128428567,"level":"error","data":["[TransformError: SyntaxError: D:\\project\\hope-one\\src\\screens\\Signup.tsx: Unexpected token (50:36)\n\n  48 |     <View className=\"mb-3 flex-row items-center\">\n  49 |       <Ionicons name={icon} size={19} color={colors.primary} />\n> 50 |       <Text className=\"ml-2 text-[ \"+text+ \"px] font-bold\" style={{ color: colors.navy }}>\n     |                                     ^\n  51 |         {title}\n  52 |       </Text>\n  53 |     </View>]"]}
+{"_e":"metro:client_log","_t":1790129297157,"level":"error","data":["[ReferenceError: Property 'useLocation' doesn't exist]"]}
+{"_e":"metro:bundling:started","_t":1790129368344,"id":"4u","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790129368381,"id":"4u","total":1,"ms":37.2022}
+{"_e":"metro:client_log","_t":1790129370416,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790129370416,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790129370657,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790129379585,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1790129664848,"level":"error","data":["[Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `MainTabs`.]"]}
+{"_e":"metro:bundling:started","_t":1790129849895,"id":"u","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790129849897,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790129849899,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790129850061,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790129850505,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790129850648,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790129850848,"id":"u","total":1,"ms":951.0871}
+{"_e":"metro:bundling:started","_t":1790129860509,"id":"53","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790129860559,"id":"53","total":1,"ms":50.3356}
+{"_e":"metro:client_log","_t":1790129862430,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790129862430,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790129862589,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790129872610,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790130063594,"id":"v","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790130063594,"id":"v","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790130063760,"id":"v","total":1,"ms":166.332}
+{"_e":"metro:bundling:started","_t":1790130083431,"id":"x","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790130083431,"id":"x","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790130083584,"id":"x","total":1,"ms":153.0751}
+{"_e":"metro:bundling:started","_t":1790130104859,"id":"y","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790130104860,"id":"y","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790130104925,"id":"y","total":1,"ms":65.503}
+{"_e":"root:init","_t":1790130121066,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790130121067,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790130121069,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790130122183,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790130122970,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790130127387,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790130139270,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790130145965,"id":"4","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790130145966,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790130145994,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790130146663,"id":"4","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1790130146764,"id":"4","progress":0.010000000000000002,"total":20,"current":2}
+{"_e":"metro:bundling:progress","_t":1790130146875,"id":"4","progress":0.02040816326530612,"total":21,"current":3}
+{"_e":"metro:bundling:progress","_t":1790130146954,"id":"4","progress":0.03628117913832199,"total":21,"current":4}
+{"_e":"metro:bundling:progress","_t":1790130147059,"id":"4","progress":0.03628117913832199,"total":31,"current":5}
+{"_e":"metro:bundling:progress","_t":1790130147185,"id":"4","progress":0.03628117913832199,"total":41,"current":7}
+{"_e":"metro:bundling:progress","_t":1790130147246,"id":"4","progress":0.0380725758477097,"total":41,"current":8}
+{"_e":"metro:bundling:progress","_t":1790130147356,"id":"4","progress":0.051652892561983466,"total":44,"current":10}
+{"_e":"metro:bundling:progress","_t":1790130147460,"id":"4","progress":0.051652892561983466,"total":64,"current":13}
+{"_e":"metro:bundling:progress","_t":1790130147560,"id":"4","progress":0.051652892561983466,"total":71,"current":16}
+{"_e":"metro:bundling:progress","_t":1790130147670,"id":"4","progress":0.06079939951210358,"total":73,"current":18}
+{"_e":"metro:bundling:progress","_t":1790130147772,"id":"4","progress":0.08163265306122448,"total":77,"current":22}
+{"_e":"metro:bundling:progress","_t":1790130147873,"id":"4","progress":0.08857709750566893,"total":84,"current":25}
+{"_e":"metro:bundling:progress","_t":1790130147976,"id":"4","progress":0.08857709750566893,"total":107,"current":31}
+{"_e":"metro:bundling:progress","_t":1790130148100,"id":"4","progress":0.08857709750566893,"total":217,"current":40}
+{"_e":"metro:bundling:progress","_t":1790130148204,"id":"4","progress":0.08857709750566893,"total":225,"current":53}
+{"_e":"metro:bundling:progress","_t":1790130148306,"id":"4","progress":0.08857709750566893,"total":268,"current":67}
+{"_e":"metro:bundling:progress","_t":1790130148418,"id":"4","progress":0.08857709750566893,"total":283,"current":82}
+{"_e":"metro:bundling:progress","_t":1790130148527,"id":"4","progress":0.09110090719809637,"total":328,"current":99}
+{"_e":"metro:bundling:progress","_t":1790130148651,"id":"4","progress":0.1085121107266436,"total":340,"current":112}
+{"_e":"metro:bundling:progress","_t":1790130148770,"id":"4","progress":0.11668905432992586,"total":363,"current":124}
+{"_e":"metro:bundling:progress","_t":1790130148874,"id":"4","progress":0.12906008093208463,"total":373,"current":134}
+{"_e":"metro:bundling:progress","_t":1790130148979,"id":"4","progress":0.14761772853185592,"total":380,"current":146}
+{"_e":"metro:bundling:progress","_t":1790130149087,"id":"4","progress":0.16231043941824957,"total":417,"current":168}
+{"_e":"metro:bundling:progress","_t":1790130149192,"id":"4","progress":0.19392307044861545,"total":436,"current":192}
+{"_e":"metro:bundling:progress","_t":1790130149295,"id":"4","progress":0.22415615944866474,"total":452,"current":214}
+{"_e":"metro:bundling:progress","_t":1790130149401,"id":"4","progress":0.27448487712665404,"total":460,"current":241}
+{"_e":"metro:bundling:progress","_t":1790130149507,"id":"4","progress":0.30890696089447217,"total":466,"current":259}
+{"_e":"metro:bundling:progress","_t":1790130149607,"id":"4","progress":0.33310709595543797,"total":499,"current":288}
+{"_e":"metro:bundling:progress","_t":1790130149709,"id":"4","progress":0.33310709595543797,"total":561,"current":319}
+{"_e":"metro:bundling:progress","_t":1790130149812,"id":"4","progress":0.33310709595543797,"total":595,"current":340}
+{"_e":"metro:bundling:progress","_t":1790130149913,"id":"4","progress":0.3473593316063385,"total":621,"current":366}
+{"_e":"metro:bundling:progress","_t":1790130150013,"id":"4","progress":0.36337234692986287,"total":642,"current":387}
+{"_e":"metro:bundling:progress","_t":1790130150113,"id":"4","progress":0.36337234692986287,"total":674,"current":403}
+{"_e":"metro:bundling:progress","_t":1790130150215,"id":"4","progress":0.3695405237118571,"total":709,"current":431}
+{"_e":"metro:bundling:progress","_t":1790130150315,"id":"4","progress":0.3955976218787158,"total":725,"current":456}
+{"_e":"metro:bundling:progress","_t":1790130150415,"id":"4","progress":0.42409550891312575,"total":734,"current":478}
+{"_e":"metro:bundling:progress","_t":1790130150516,"id":"4","progress":0.4409241062680217,"total":756,"current":502}
+{"_e":"metro:bundling:progress","_t":1790130150616,"id":"4","progress":0.46183789702808997,"total":774,"current":526}
+{"_e":"metro:bundling:progress","_t":1790130150719,"id":"4","progress":0.4869957694096513,"total":791,"current":552}
+{"_e":"metro:bundling:progress","_t":1790130150819,"id":"4","progress":0.5140282087797962,"total":802,"current":575}
+{"_e":"metro:bundling:progress","_t":1790130150929,"id":"4","progress":0.5437016607345667,"total":811,"current":598}
+{"_e":"metro:bundling:progress","_t":1790130151029,"id":"4","progress":0.5534348784051276,"total":824,"current":613}
+{"_e":"metro:bundling:progress","_t":1790130151131,"id":"4","progress":0.5679216554178995,"total":832,"current":627}
+{"_e":"metro:bundling:progress","_t":1790130151241,"id":"4","progress":0.5936876573808713,"total":841,"current":648}
+{"_e":"metro:bundling:progress","_t":1790130151341,"id":"4","progress":0.6224895513936743,"total":853,"current":673}
+{"_e":"metro:bundling:progress","_t":1790130151448,"id":"4","progress":0.6545259452160495,"total":864,"current":699}
+{"_e":"metro:bundling:progress","_t":1790130151550,"id":"4","progress":0.6960436251342428,"total":869,"current":725}
+{"_e":"metro:bundling:progress","_t":1790130151650,"id":"4","progress":0.710766812442513,"total":873,"current":736}
+{"_e":"metro:bundling:progress","_t":1790130151753,"id":"4","progress":0.7319323920121886,"total":886,"current":758}
+{"_e":"metro:bundling:progress","_t":1790130151852,"id":"4","progress":0.7680848377730085,"total":890,"current":780}
+{"_e":"metro:bundling:progress","_t":1790130151955,"id":"4","progress":0.8093981051666088,"total":897,"current":807}
+{"_e":"metro:bundling:progress","_t":1790130152057,"id":"4","progress":0.8390964866762308,"total":905,"current":829}
+{"_e":"metro:bundling:progress","_t":1790130152159,"id":"4","progress":0.8595045236519329,"total":919,"current":852}
+{"_e":"metro:bundling:progress","_t":1790130152262,"id":"4","progress":0.8656569107107649,"total":934,"current":869}
+{"_e":"metro:bundling:progress","_t":1790130152363,"id":"4","progress":0.8656569107107649,"total":958,"current":879}
+{"_e":"metro:bundling:progress","_t":1790130152464,"id":"4","progress":0.8656569107107649,"total":996,"current":886}
+{"_e":"metro:bundling:progress","_t":1790130152564,"id":"4","progress":0.8656569107107649,"total":1001,"current":900}
+{"_e":"metro:bundling:progress","_t":1790130152675,"id":"4","progress":0.8656569107107649,"total":1009,"current":911}
+{"_e":"metro:bundling:progress","_t":1790130152794,"id":"4","progress":0.8656569107107649,"total":1016,"current":925}
+{"_e":"metro:bundling:progress","_t":1790130152894,"id":"4","progress":0.8656569107107649,"total":1046,"current":946}
+{"_e":"metro:bundling:progress","_t":1790130152997,"id":"4","progress":0.8656569107107649,"total":1080,"current":965}
+{"_e":"metro:bundling:progress","_t":1790130153100,"id":"4","progress":0.8656569107107649,"total":1104,"current":974}
+{"_e":"metro:bundling:progress","_t":1790130153211,"id":"4","progress":0.8656569107107649,"total":1116,"current":983}
+{"_e":"metro:bundling:progress","_t":1790130153327,"id":"4","progress":0.8656569107107649,"total":1135,"current":991}
+{"_e":"metro:bundling:progress","_t":1790130153436,"id":"4","progress":0.8656569107107649,"total":1136,"current":1003}
+{"_e":"metro:bundling:progress","_t":1790130153556,"id":"4","progress":0.8656569107107649,"total":1139,"current":1011}
+{"_e":"metro:bundling:progress","_t":1790130153658,"id":"4","progress":0.8656569107107649,"total":1153,"current":1021}
+{"_e":"metro:bundling:progress","_t":1790130153761,"id":"4","progress":0.8656569107107649,"total":1164,"current":1033}
+{"_e":"metro:bundling:progress","_t":1790130153880,"id":"4","progress":0.8656569107107649,"total":1170,"current":1046}
+{"_e":"metro:bundling:progress","_t":1790130153973,"id":"4","progress":0.8656569107107649,"total":1177,"current":1061}
+{"_e":"metro:bundling:progress","_t":1790130154075,"id":"4","progress":0.8656569107107649,"total":1177,"current":1063}
+{"_e":"metro:bundling:progress","_t":1790130154174,"id":"4","progress":0.8656569107107649,"total":1190,"current":1073}
+{"_e":"metro:bundling:progress","_t":1790130154296,"id":"4","progress":0.8656569107107649,"total":1218,"current":1087}
+{"_e":"metro:bundling:progress","_t":1790130154409,"id":"4","progress":0.8656569107107649,"total":1219,"current":1098}
+{"_e":"metro:bundling:progress","_t":1790130154516,"id":"4","progress":0.8656569107107649,"total":1222,"current":1105}
+{"_e":"metro:bundling:progress","_t":1790130154616,"id":"4","progress":0.8656569107107649,"total":1240,"current":1115}
+{"_e":"metro:bundling:progress","_t":1790130154739,"id":"4","progress":0.8656569107107649,"total":1246,"current":1116}
+{"_e":"metro:bundling:progress","_t":1790130154860,"id":"4","progress":0.8656569107107649,"total":1256,"current":1140}
+{"_e":"metro:bundling:progress","_t":1790130154964,"id":"4","progress":0.8656569107107649,"total":1263,"current":1152}
+{"_e":"metro:bundling:progress","_t":1790130155064,"id":"4","progress":0.8656569107107649,"total":1270,"current":1168}
+{"_e":"metro:bundling:progress","_t":1790130155164,"id":"4","progress":0.8656569107107649,"total":1276,"current":1175}
+{"_e":"metro:bundling:started","_t":1790130155193,"id":"5d","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790130155269,"id":"4","progress":0.8656569107107649,"total":1287,"current":1188}
+{"_e":"metro:bundling:progress","_t":1790130155376,"id":"4","progress":0.8656569107107649,"total":1298,"current":1199}
+{"_e":"metro:bundling:progress","_t":1790130155484,"id":"4","progress":0.8656569107107649,"total":1315,"current":1210}
+{"_e":"metro:bundling:progress","_t":1790130155591,"id":"4","progress":0.8656569107107649,"total":1321,"current":1217}
+{"_e":"metro:bundling:progress","_t":1790130155701,"id":"4","progress":0.8656569107107649,"total":1321,"current":1220}
+{"_e":"metro:bundling:progress","_t":1790130155805,"id":"4","progress":0.8656569107107649,"total":1323,"current":1225}
+{"_e":"metro:bundling:progress","_t":1790130155915,"id":"4","progress":0.8656569107107649,"total":1323,"current":1226}
+{"_e":"metro:bundling:progress","_t":1790130156015,"id":"4","progress":0.8656569107107649,"total":1324,"current":1230}
+{"_e":"metro:bundling:progress","_t":1790130156121,"id":"4","progress":0.8714871167660025,"total":1324,"current":1236}
+{"_e":"metro:bundling:progress","_t":1790130156222,"id":"4","progress":0.8873980485193786,"total":1328,"current":1251}
+{"_e":"metro:bundling:progress","_t":1790130156322,"id":"4","progress":0.9090068024753312,"total":1331,"current":1269}
+{"_e":"metro:bundling:progress","_t":1790130156432,"id":"4","progress":0.9163070962789459,"total":1333,"current":1276}
+{"_e":"metro:bundling:progress","_t":1790130156533,"id":"4","progress":0.9264423260633551,"total":1334,"current":1284}
+{"_e":"metro:bundling:progress","_t":1790130156638,"id":"4","progress":0.9329640988217942,"total":1349,"current":1303}
+{"_e":"metro:bundling:progress","_t":1790130156742,"id":"4","progress":0.9475693413760706,"total":1355,"current":1319}
+{"_e":"metro:bundling:progress","_t":1790130156842,"id":"4","progress":0.9535622874713484,"total":1362,"current":1330}
+{"_e":"metro:bundling:progress","_t":1790130156942,"id":"4","progress":0.9550293927824182,"total":1363,"current":1332}
+{"_e":"metro:bundling:progress","_t":1790130157042,"id":"4","progress":0.9584721695732397,"total":1382,"current":1353}
+{"_e":"metro:bundling:progress","_t":1790130157146,"id":"4","progress":0.9584721695732397,"total":1416,"current":1378}
+{"_e":"metro:bundling:progress","_t":1790130157247,"id":"4","progress":0.9641408660372142,"total":1437,"current":1411}
+{"_e":"metro:bundling:progress","_t":1790130157356,"id":"4","progress":0.9641408660372142,"total":1461,"current":1427}
+{"_e":"metro:bundling:progress","_t":1790130157456,"id":"4","progress":0.9972752056257895,"total":1467,"current":1465}
+{"_e":"metro:bundling:progress","_t":1790130157556,"id":"4","progress":0.9986454454652948,"total":1476,"current":1475}
+{"_e":"metro:bundling:progress","_t":1790130157659,"id":"4","progress":0.999,"total":1476,"current":1476}
+{"_e":"metro:bundling:done","_t":1790130157965,"id":"4","total":1476,"ms":12000.0277}
+{"_e":"metro:bundling:done","_t":1790130163919,"id":"5d","total":1,"ms":8725.4241}
+{"_e":"metro:client_log","_t":1790130168519,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790130168519,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790130168946,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790130188088,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790130409850,"id":"5","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790130409850,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790130409978,"id":"5","total":1,"ms":127.5635}
+{"_e":"metro:bundling:started","_t":1790131393856,"id":"5k","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1790131394490,"id":"5k","total":1,"ms":633.862}
+{"_e":"metro:client_log","_t":1790131397478,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1790131397479,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1790131397688,"level":"error","data":["[Error: Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')]","\n\nCode: color-scheme.js\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mset\u001b[39m(value) {\n \u001b[90m 45 |\u001b[39m         \u001b[36mif\u001b[39m (darkMode \u001b[33m===\u001b[39m \u001b[32m\"media\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme, as dark mode is type 'media'. Please use StyleSheet.setFlag('darkMode', 'class')\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         }\n \u001b[90m 48 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mglobalThis\u001b[33m.\u001b[39mwindow) {\n \u001b[90m 49 |\u001b[39m             \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Cannot manually set color scheme while not in a browser environment.\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\nCall Stack\n  exports.colorScheme.set (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:46:19)\n  MutationObserver$argument_0 (node_modules\\react-native-css-interop\\dist\\runtime\\web\\color-scheme.js:36:29)"]}
+{"_e":"metro:client_log","_t":1790131408583,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1790131459177,"id":"7","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790131459177,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790131459179,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790131459283,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790131459520,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790131459631,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790131459805,"id":"7","total":1,"ms":628.289}
+{"_e":"metro:bundling:started","_t":1790131517639,"id":"8","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790131517639,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790131517688,"id":"8","total":1,"ms":48.5187}
+{"_e":"metro:bundling:started","_t":1790131630266,"id":"b","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790131630266,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790131630328,"id":"b","total":1,"ms":62.4171}
