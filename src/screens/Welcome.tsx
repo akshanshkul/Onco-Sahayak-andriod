@@ -32,7 +32,7 @@ export default function Welcome({ navigation }: { navigation: any }) {
         </View>
 
         <ScrollView
-          contentContainerStyle={{ paddingBottom: 24 }}
+          contentContainerStyle={{ paddingBottom: 20 }}
           showsVerticalScrollIndicator={false}
         >
           <View className="items-center pt-1">
@@ -43,7 +43,7 @@ export default function Welcome({ navigation }: { navigation: any }) {
             <View className="flex-1 pr-3">
               <Text
                 className="font-extrabold"
-                style={{ color: colors.navy, fontSize: 27, lineHeight: 33 }}
+                style={{ color: colors.navy, fontSize: 25, lineHeight: 30 }}
                 adjustsFontSizeToFit
                 numberOfLines={3}
               >
@@ -52,19 +52,19 @@ export default function Welcome({ navigation }: { navigation: any }) {
                 {"\n"}Is Possible
               </Text>
 
-              <Text className="mt-3 text-[14px] leading-[20px] text-slate-500">
+              <Text className="mt-3 text-[12px] leading-[20px] text-slate-500">
                 Find the right hospitals, financial support and a caring community — all in
                 one place.
               </Text>
 
               {/* Feature list sits beside the portrait, as in the design */}
-              <View className="mt-6">
+              <View className="mt-4">
                 {FEATURES.map((f) => (
-                  <View key={f.label} className="mb-4 flex-row items-center">
-                    <IconTile icon={f.icon} tone={f.tone} size={46} radius={23} />
+                  <View key={f.label} className="mb-2 flex-row items-center">
+                    <IconTile icon={f.icon} tone={f.tone} size={40} radius={20} />
                     <Text
-                      className="ml-3 flex-1 text-[14px] font-bold"
-                      style={{ color: colors.navy, lineHeight: 19 }}
+                      className="ml-3 flex-1 text-[10px] font-bold"
+                      style={{ color: colors.navy, lineHeight: 15 }}
                     >
                       {f.label}
                     </Text>
@@ -77,7 +77,7 @@ export default function Welcome({ navigation }: { navigation: any }) {
                 script and the pull-quote from the design. */}
             <Image
               source={IMG.welcomeHero}
-              style={{ width: 150, height: 372 }}
+              style={{ width: 150, height: 280 }}
               resizeMode="cover"
               className="rounded-2xl"
             />

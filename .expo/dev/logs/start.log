@@ -916,3 +916,6 @@
 {"_e":"metro:bundling:started","_t":1790131630266,"id":"b","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
 {"_e":"metro:bundling:progress","_t":1790131630266,"id":"b","progress":0,"total":1,"current":0}
 {"_e":"metro:bundling:done","_t":1790131630328,"id":"b","total":1,"ms":62.4171}
+{"_e":"metro:bundling:started","_t":1790132309566,"id":"d","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790132309566,"id":"d","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790132309646,"id":"d","total":1,"ms":79.5124}
