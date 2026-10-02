@@ -27,7 +27,7 @@ function PhotoCarousel({ h }: { h: Hospital }) {
         style={{ height: 190, borderRadius: 22, backgroundColor: "#E6F1FD" }}
       >
         <Image
-          source={IMG.hospitalPhoto}
+          source={h.bannerUrl ? { uri: h.bannerUrl } : IMG.hospitalPhoto}
           style={{ width: "100%", height: "100%" }}
           resizeMode="cover"
         />
@@ -164,6 +164,7 @@ export default function HospitalDetails({
   const h: Hospital = route.params?.hospital;
   const [tab, setTab] = useState(hospitalTabs[0]);
   const [saved, setSaved] = useState(false);
+  const openUrl = (url: string) => Linking.openURL(/^https?:\/\//i.test(url) ? url : `https://${url}`);
 
   if (!h) {
     return (
@@ -221,26 +222,46 @@ export default function HospitalDetails({
         </View>
 
         {/* Location strip */}
-        <View className="mt-2.5 flex-row items-center px-4">
-          <Ionicons name="location" size={14} color={colors.primary} />
-          <Text className="ml-1 text-[12px] text-slate-500">
-            {h.city} - {h.pin}
-          </Text>
-          <View className="mx-2.5 h-3.5 w-px" style={{ backgroundColor: colors.border }} />
-          <Ionicons name="car" size={14} color={colors.slate500} />
-          <Text className="ml-1 text-[12px] text-slate-500">
-            {h.distance} ({h.driveTime})
-          </Text>
-          <View className="flex-1" />
-          <Pressable
-            className="flex-row items-center rounded-full border px-3 py-1.5"
-            style={{ borderColor: colors.primary }}
-          >
-            <Ionicons name="navigate" size={13} color={colors.primary} />
-            <Text className="ml-1 text-[12px] font-bold" style={{ color: colors.primary }}>
-              Get Directions
+        <View className="mt-2.5 px-4">
+          <View className="flex-row items-center">
+            <Ionicons name="location" size={14} color={colors.primary} />
+            <Text
+              className="ml-1 flex-1 text-[12px] text-slate-500"
+              numberOfLines={1}
+              ellipsizeMode="tail"
+            >
+              {h.city} - {h.pin}
             </Text>
-          </Pressable>
+            <View className="mx-2.5 h-3.5 w-px" style={{ backgroundColor: colors.border }} />
+            <Ionicons name="car" size={14} color={colors.slate500} />
+            <Text
+              className="ml-1 flex-1 text-[12px] text-slate-500"
+              numberOfLines={1}
+              ellipsizeMode="tail"
+            >
+              {h.distance} ({h.driveTime})
+            </Text>
+          </View>
+          <View className="mt-2 items-end">
+            <Pressable
+              className="flex-row items-center rounded-full border px-3 py-1.5"
+              style={{ borderColor: colors.primary }}
+            >
+              <Ionicons name="navigate" size={13} color={colors.primary} />
+              <Text className="ml-1 text-[12px] font-bold" style={{ color: colors.primary }}>
+                Get Directions
+              </Text>
+            </Pressable>
+          </View>
+          {(h.phone || h.contactEmail || h.website || h.hours || h.emergencyPhone) && (
+            <Card className="mt-3 p-3">
+              {h.phone ? <Pressable className="flex-row items-center py-2" onPress={() => Linking.openURL(`tel:${h.phone.replace(/\s/g, "")}`)}><Ionicons name="call-outline" size={16} color={colors.primary} /><Text className="ml-2 flex-1 text-[13px]" style={{ color: colors.navy }}>{h.phone}</Text></Pressable> : null}
+              {h.emergencyPhone ? <Pressable className="flex-row items-center py-2" onPress={() => Linking.openURL(`tel:${h.emergencyPhone.replace(/\s/g, "")}`)}>              <Ionicons name="medkit-outline" size={16} color={colors.pink} /><Text className="ml-2 flex-1 text-[13px]" style={{ color: colors.navy }}>Emergency: {h.emergencyPhone}</Text></Pressable> : null}
+              {h.contactEmail ? <Pressable className="flex-row items-center py-2" onPress={() => Linking.openURL(`mailto:${h.contactEmail}`)}><Ionicons name="mail-outline" size={16} color={colors.primary} /><Text className="ml-2 flex-1 text-[13px]" style={{ color: colors.navy }}>{h.contactEmail}</Text></Pressable> : null}
+              {h.website ? <Pressable className="flex-row items-center py-2" onPress={() => openUrl(h.website)}><Ionicons name="globe-outline" size={16} color={colors.primary} /><Text className="ml-2 flex-1 text-[13px]" style={{ color: colors.navy }}>{h.website}</Text></Pressable> : null}
+              {h.hours ? <View className="flex-row items-center py-2"><Ionicons name="time-outline" size={16} color={colors.primary} /><Text className="ml-2 flex-1 text-[13px]" style={{ color: colors.navy }}>{h.hours}</Text></View> : null}
+            </Card>
+          )}
         </View>
 
         {/* Tabs */}
@@ -376,10 +397,32 @@ export default function HospitalDetails({
                   ))}
                 </View>
                 <Text className="mt-2 text-center text-[13px] text-slate-500">
-                  Based on {h.reviews} patient reviews. Individual reviews are not part of this
-                  prototype.
+                  Based on {h.reviews} patient reviews.
                 </Text>
               </Card>
+              {(h.review_items || []).map((review) => (
+                <Card key={`${review.name}-${review.date}`} className="mt-3 p-4">
+                  <View className="flex-row items-center justify-between">
+                    <Text className="text-[13px] font-bold" style={{ color: colors.navy }}>
+                      {review.name}
+                    </Text>
+                    <Text className="text-[11px] text-slate-400">{review.date}</Text>
+                  </View>
+                  <View className="mt-1 flex-row">
+                    {[1, 2, 3, 4, 5].map((n) => (
+                      <Ionicons
+                        key={n}
+                        name={n <= review.rating ? "star" : "star-outline"}
+                        size={14}
+                        color={colors.amber}
+                      />
+                    ))}
+                  </View>
+                  <Text className="mt-2 text-[13px] leading-5 text-slate-500">
+                    {review.text}
+                  </Text>
+                </Card>
+              ))}
             </>
           )}
         </View>

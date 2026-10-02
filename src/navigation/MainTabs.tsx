@@ -8,6 +8,7 @@ import MyDocuments from "../screens/MyDocuments";
 import Profile from "../screens/Profile";
 import BottomNav from "../components/BottomNav";
 import { ScreenWash } from "../components/ui";
+import NotificationRegistration from "../components/NotificationRegistration";
 
 export default function MainTabs({
   navigation,
@@ -32,7 +33,7 @@ export default function MainTabs({
       case "Assistance":
         return <Assistance navigation={navigation} />;
       case "Documents":
-        return <MyDocuments />;
+        return <MyDocuments navigation={navigation} />;
       case "Profile":
         return <Profile navigation={navigation} />;
       default:
@@ -42,6 +43,7 @@ export default function MainTabs({
 
   return (
     <ScreenWash>
+      <NotificationRegistration />
       {/* `top` keeps content clear of the status bar / notch; the tab bar
           handles the bottom inset itself so it can paint to the screen edge. */}
       <SafeAreaView className="flex-1" edges={["top", "left", "right"]}>

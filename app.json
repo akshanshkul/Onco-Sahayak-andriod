@@ -1,14 +1,17 @@
 {
   "expo": {
-    "name": "Onco Sahayak",
+    "name": "Onco",
     "slug": "hopecare",
-    "version": "1.0.0",
+    "scheme": "hopecare",
+    "version": "1.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "icon": "./assets/images/icon.png",
     "plugins": [
       "expo-document-picker",
       "expo-status-bar",
+      "expo-notifications",
+      "expo-contacts",
       "expo-font",
       "@react-native-community/datetimepicker",
       [
@@ -29,10 +32,14 @@
     ],
     "android": {
       "package": "com.hopecare.app",
-      "versionCode": 1,
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 2,
+      "softwareKeyboardLayoutMode": "resize",
+      "usesCleartextTraffic": true,
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION"
+        ,"android.permission.READ_CONTACTS"
       ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
@@ -48,9 +55,7 @@
         "projectId": "9c58f3b7-4161-4abb-af2f-d8ebab9bf8c3"
       }
     },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
+    "runtimeVersion": "1.0.0",
     "updates": {
       "url": "https://u.expo.dev/9c58f3b7-4161-4abb-af2f-d8ebab9bf8c3"
     }

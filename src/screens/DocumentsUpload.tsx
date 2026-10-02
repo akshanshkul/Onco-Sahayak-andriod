@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { View, Text, ScrollView, Pressable } from "react-native";
+import { View, Text, ScrollView, Pressable, Alert } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as DocumentPicker from "expo-document-picker";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../theme";
 import { AppHeader, Card, CTA, Field, ScreenWash, NoteBar } from "../components/ui";
 import Stepper from "../components/Stepper";
+import { uploadFile } from "../services/api";
 
 type Slot = { key: string; label: string; hint: string };
 
@@ -15,9 +16,11 @@ const SUPPORTING: Slot[] = [
   { key: "doc3", label: "Document 3 Name", hint: "e.g. Previous Treatment" },
 ];
 
-export default function DocumentsUpload({ navigation }: { navigation: any }) {
+export default function DocumentsUpload({ navigation, route }: { navigation: any; route?: any }) {
   const [picked, setPicked] = useState<Record<string, string>>({});
   const [names, setNames] = useState<Record<string, string>>({});
+  const [uploading, setUploading] = useState<string | null>(null);
+  const [uploadedKeys, setUploadedKeys] = useState<Record<string, string>>({});
 
   const pick = async (key: string) => {
     const r = await DocumentPicker.getDocumentAsync({
@@ -25,11 +28,35 @@ export default function DocumentsUpload({ navigation }: { navigation: any }) {
       type: ["application/pdf", "image/*"],
     });
     if (!r.canceled) {
-      setPicked((prev) => ({ ...prev, [key]: r.assets[0].name }));
+      const asset = r.assets[0];
+      setUploading(key);
+      try {
+        const uploaded = await uploadFile(
+          { uri: asset.uri, name: asset.name, mimeType: asset.mimeType },
+          "document"
+        );
+        setUploadedKeys((prev) => ({ ...prev, [key]: uploaded.key }));
+        setPicked((prev) => ({ ...prev, [key]: asset.name }));
+      } catch (error) {
+        setPicked((prev) => ({ ...prev, [key]: "" }));
+        Alert.alert("Upload failed", error instanceof Error ? error.message : "Unable to upload file");
+      } finally {
+        setUploading(null);
+      }
     }
   };
 
   const medical = picked.medical;
+  const continueToReview = () => {
+    if (!medical) {
+      Alert.alert("Medical report required", "Please upload your medical report before continuing.");
+      return;
+    }
+    navigation.replace("RegistrationWaiting", {
+      documentMetadata: Object.values(uploadedKeys),
+      registrationData: route?.params?.registrationData,
+    });
+  };
 
   return (
     <ScreenWash>
@@ -84,7 +111,7 @@ export default function DocumentsUpload({ navigation }: { navigation: any }) {
                   className="mt-2 text-[14px] font-bold"
                   style={{ color: medical ? colors.primary : colors.navy }}
                 >
-                  {medical ?? "Upload Medical Report"}
+                  {uploading === "medical" ? "Uploading..." : medical ?? "Upload Medical Report"}
                 </Text>
                 <Text className="mt-0.5 text-[12px] text-slate-500">
                   {medical ? "Tap to replace" : "(Cancer report, diagnosis, etc.)"}
@@ -124,7 +151,7 @@ export default function DocumentsUpload({ navigation }: { navigation: any }) {
                         className="mt-0.5 text-[12px] font-bold"
                         style={{ color: colors.primary }}
                       >
-                        {file ? "Added" : "Upload"}
+                        {uploading === s.key ? "Uploading..." : file ? "Added" : "Upload"}
                       </Text>
                     </Pressable>
                   </View>
@@ -134,7 +161,7 @@ export default function DocumentsUpload({ navigation }: { navigation: any }) {
               {!!Object.keys(picked).length && (
                 <NoteBar
                   icon="checkmark-circle"
-                  text={`${Object.keys(picked).length} file(s) attached. They stay on your device in this prototype.`}
+                  text={`${Object.keys(picked).length} file(s) uploaded securely.`}
                 />
               )}
 
@@ -142,7 +169,7 @@ export default function DocumentsUpload({ navigation }: { navigation: any }) {
                 <CTA
                   label="Continue"
                   chevron
-                  onPress={() => navigation.replace("Main")}
+                  onPress={continueToReview}
                 />
               </View>
             </Card>

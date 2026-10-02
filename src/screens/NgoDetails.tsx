@@ -142,7 +142,11 @@ export default function NgoDetails({
                 className="h-[62px] w-[62px] items-center justify-center rounded-2xl"
                 style={{ backgroundColor: "#F5F8FB" }}
               >
-                <IconTile icon={n.logoIcon} tone={n.logoTone} size={46} radius={14} />
+                {n.bannerUrl ? (
+                  <Image source={{ uri: n.bannerUrl }} className="h-full w-full rounded-2xl" resizeMode="cover" />
+                ) : (
+                  <IconTile icon={n.logoIcon} tone={n.logoTone} size={46} radius={14} />
+                )}
               </View>
 
               <View className="ml-3 flex-1">
@@ -241,6 +245,21 @@ export default function NgoDetails({
             </Pressable>
 
             <View className="h-px" style={{ backgroundColor: colors.border }} />
+
+            {!!n.contactEmail && <Pressable
+              onPress={() => Linking.openURL(`mailto:${n.contactEmail}`)}
+              className="flex-row items-center p-2.5"
+            >
+              <IconTile icon="mail" tone="sky" size={38} radius={12} />
+              <View className="ml-3 flex-1">
+                <Text className="text-[11px] text-slate-500">Email</Text>
+                <Text className="text-[14px] font-bold" style={{ color: colors.navy }}>
+                  {n.contactEmail}
+                </Text>
+              </View>
+              <Ionicons name="chevron-forward" size={17} color={colors.slate400} />
+            </Pressable>}
+            {!!n.contactEmail && <View className="h-px" style={{ backgroundColor: colors.border }} />}
 
             <Pressable
               onPress={() => Linking.openURL(`https://${n.website}`)}

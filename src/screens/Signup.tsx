@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { View, Text, ScrollView, Pressable, Platform } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  Pressable,
+  Platform,
+  Alert,
+  KeyboardAvoidingView,
+  Keyboard,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../theme";
@@ -15,14 +24,14 @@ import {
 import Stepper from "../components/Stepper";
 import { DateSheet, OptionSheet } from "../components/pickers";
 import {
-  GENDERS,
-  INCOME_BANDS,
-  RATION_CARDS,
-  INSURANCE_STATUS,
   formatDob,
 } from "../data/options";
 import { states, getDistrictsByState } from "../data/state";
 import DateTimePicker from "@react-native-community/datetimepicker";
+import * as Contacts from "expo-contacts";
+import * as Location from "expo-location";
+import { getCatalogOptions, register } from "../services/api";
+import RegistrationLoader from "../components/RegistrationLoader";
 /**
  * Two fields side by side, as the design pairs them. `minWidth: 0` lets each
  * column shrink below its input's intrinsic width — without it the right-hand
@@ -54,7 +63,29 @@ function GroupHeading({ icon, title }: { icon: any; title: string }) {
   );
 }
 
-export default function Signup({ navigation }: { navigation: any }) {
+export default function Signup({ navigation, route }: { navigation: any; route?: any }) {
+  const [catalogOptions, setCatalogOptions] = useState({
+    gender: [] as string[],
+    income: [] as string[],
+    rationCard: [] as string[],
+    insurance: [] as string[],
+  });
+  const [keyboardVisible, setKeyboardVisible] = useState(false);
+  const scrollRef = React.useRef<ScrollView>(null);
+  const [fullName, setFullName] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [pinCode, setPinCode] = useState("");
+  const [emergencyContact, setEmergencyContact] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  React.useEffect(() => {
+    getCatalogOptions().then(setCatalogOptions).catch(() => {
+      Alert.alert("Unable to load form options", "Please check your connection and try again.");
+    });
+  }, []);
+  const [loading, setLoading] = useState(false);
   const [hidePwd, setHidePwd] = useState(true);
   const [hideConfirm, setHideConfirm] = useState(true);
 
@@ -86,9 +117,97 @@ export default function Signup({ navigation }: { navigation: any }) {
   const [dependents, setDependents] = useState("");
   const [occupation, setOccupation] = useState("");
 
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      Location.requestForegroundPermissionsAsync()
+        .then(() => Contacts.requestPermissionsAsync())
+        .catch(() => undefined);
+    }, 700);
+    return () => clearTimeout(timer);
+  }, []);
+
+  React.useEffect(() => {
+    const showSubscription = Keyboard.addListener("keyboardDidShow", () =>
+      setKeyboardVisible(true)
+    );
+    const hideSubscription = Keyboard.addListener("keyboardDidHide", () =>
+      setKeyboardVisible(false)
+    );
+
+    return () => {
+      showSubscription.remove();
+      hideSubscription.remove();
+    };
+  }, []);
+
   const familyFilled = [income, rationCard, insurance, dependents, occupation].filter(
     Boolean
   ).length;
+
+  const submitRegistration = async () => {
+    if (loading) return;
+
+    const missing = [
+      ["Full Name", fullName],
+      ["Mobile Number", mobile],
+      ["Email Address", email],
+      ["Date of Birth", dateOfBirth],
+      ["Gender", gender],
+      ["Address", address],
+      ["State", stateLabel],
+      ["District", districtLabel],
+      ["PIN Code", pinCode],
+      ["Emergency Contact", emergencyContact],
+      ["Password", password],
+      ["Confirm Password", confirmPassword],
+    ]
+      .filter(([, value]) => !String(value || "").trim())
+      .map(([label]) => label);
+
+    if (missing.length) {
+      Alert.alert("Complete your registration", `Please fill in: ${missing.join(", ")}`);
+      return;
+    }
+    if (!/^\S+@\S+\.\S+$/.test(email.trim())) {
+      Alert.alert("Invalid email", "Please enter a valid email address.");
+      return;
+    }
+    if (password.length < 8) {
+      Alert.alert("Password too short", "Password must be at least 8 characters.");
+      return;
+    }
+    if (password !== confirmPassword) {
+      Alert.alert("Passwords do not match", "Please enter the same password in both fields.");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      await register({
+        fullName, mobile, email, dateOfBirth: dateOfBirth?.toISOString().slice(0, 10) || "",
+        gender, address, state: stateLabel, district: districtLabel, pinCode,
+        emergencyContact, income, rationCard, insurance, dependents, occupation,
+        password, confirmPassword,
+      });
+      const registrationData = {
+        fullName, mobile, email, dateOfBirth: dateOfBirth?.toISOString().slice(0, 10) || "",
+        gender, address, state: stateLabel, district: districtLabel, pinCode,
+        emergencyContact, income, rationCard, insurance, dependents, occupation,
+        password, confirmPassword,
+      };
+      Alert.alert("Registration successful", "Thank you. We are working for you. Stay connected.", [
+        { text: "Continue", onPress: () => navigation.navigate("DocumentsUpload", { registrationData }) },
+      ]);
+    } catch (error) {
+      Alert.alert("Registration failed", error instanceof Error ? error.message : "Please try again");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const revealBottomField = () => {
+    setTimeout(() => scrollRef.current?.scrollToEnd({ animated: true }), 120);
+  };
 
   const pickState = (id: string, label: string) => {
     setStateId(id);
@@ -111,11 +230,19 @@ export default function Signup({ navigation }: { navigation: any }) {
           }
         />
 
-        <ScrollView
-          contentContainerStyle={{ paddingBottom: 32 }}
-          keyboardShouldPersistTaps="handled"
-          showsVerticalScrollIndicator={false}
+        <KeyboardAvoidingView
+          className="flex-1"
+          behavior={Platform.OS === "ios" ? "padding" : "height"}
+          keyboardVerticalOffset={Platform.OS === "ios" ? 8 : 0}
         >
+          <ScrollView
+            ref={scrollRef}
+            contentContainerStyle={{ paddingBottom: keyboardVisible ? 220 : 32 }}
+            keyboardShouldPersistTaps="handled"
+            keyboardDismissMode={Platform.OS === "ios" ? "interactive" : "on-drag"}
+            automaticallyAdjustKeyboardInsets
+            showsVerticalScrollIndicator={false}
+          >
           <Text
             className="text-center text-[30px] font-extrabold"
             style={{ color: colors.navy }}
@@ -155,6 +282,8 @@ export default function Signup({ navigation }: { navigation: any }) {
                 required
                 icon="person-outline"
                 placeholder="Enter your full name"
+                value={fullName}
+                onChangeText={setFullName}
               />
               <View className="h-3.5" />
 
@@ -165,6 +294,8 @@ export default function Signup({ navigation }: { navigation: any }) {
                   icon="call-outline"
                   placeholder="98765 43210"
                   keyboardType="phone-pad"
+                  value={mobile}
+                  onChangeText={setMobile}
                 />
                 <Field
                   label="Email Address"
@@ -173,6 +304,8 @@ export default function Signup({ navigation }: { navigation: any }) {
                   placeholder="you@mail.com"
                   keyboardType="email-address"
                   autoCapitalize="none"
+                  value={email}
+                  onChangeText={setEmail}
                 />
               </Pair>
               <View className="h-3.5" />
@@ -226,6 +359,8 @@ export default function Signup({ navigation }: { navigation: any }) {
                 required
                 icon="home-outline"
                 placeholder="House No., Street, Area"
+                value={address}
+                onChangeText={setAddress}
               />
               <View className="h-3.5" />
 
@@ -257,6 +392,8 @@ export default function Signup({ navigation }: { navigation: any }) {
                   icon="location-outline"
                   placeholder="136027"
                   keyboardType="number-pad"
+                  value={pinCode}
+                  onChangeText={setPinCode}
                 />
                 <Field
                   label="Emergency Contact"
@@ -264,6 +401,8 @@ export default function Signup({ navigation }: { navigation: any }) {
                   icon="call-outline"
                   placeholder="98765 43210"
                   keyboardType="phone-pad"
+                  value={emergencyContact}
+                  onChangeText={setEmergencyContact}
                 />
               </Pair>
 
@@ -338,6 +477,7 @@ export default function Signup({ navigation }: { navigation: any }) {
                       keyboardType="number-pad"
                       value={dependents}
                       onChangeText={setDependents}
+                      onFocus={revealBottomField}
                     />
                   </Pair>
                   <View className="h-3" />
@@ -348,6 +488,7 @@ export default function Signup({ navigation }: { navigation: any }) {
                     placeholder="e.g. Farmer, Shopkeeper, Teacher"
                     value={occupation}
                     onChangeText={setOccupation}
+                    onFocus={revealBottomField}
                   />
                   <View className="h-3" />
 
@@ -373,6 +514,9 @@ export default function Signup({ navigation }: { navigation: any }) {
                   required
                   icon="lock-closed-outline"
                   placeholder="Create password"
+                  value={password}
+                  onChangeText={setPassword}
+                  onFocus={revealBottomField}
                   secureTextEntry={hidePwd}
                   rightIcon={hidePwd ? "eye-outline" : "eye-off-outline"}
                   onRightIconPress={() => setHidePwd((v) => !v)}
@@ -382,6 +526,9 @@ export default function Signup({ navigation }: { navigation: any }) {
                   required
                   icon="lock-closed-outline"
                   placeholder="Re-enter password"
+                  value={confirmPassword}
+                  onChangeText={setConfirmPassword}
+                  onFocus={revealBottomField}
                   secureTextEntry={hideConfirm}
                   rightIcon={hideConfirm ? "eye-outline" : "eye-off-outline"}
                   onRightIconPress={() => setHideConfirm((v) => !v)}
@@ -390,9 +537,9 @@ export default function Signup({ navigation }: { navigation: any }) {
 
               <View className="mt-5">
                 <CTA
-                  label="Continue to Documents"
+                  label={loading ? "Creating account..." : "Continue to Documents"}
                   chevron
-                  onPress={() => navigation.navigate("DocumentsUpload")}
+                  onPress={submitRegistration}
                 />
               </View>
             </Card>
@@ -406,12 +553,13 @@ export default function Signup({ navigation }: { navigation: any }) {
               ♡
             </Text>
           </View>
-        </ScrollView>
+          </ScrollView>
+        </KeyboardAvoidingView>
 
         <OptionSheet
           visible={showGender}
           title="Gender"
-          options={GENDERS}
+          options={catalogOptions.gender}
           value={gender}
           onSelect={(_id, label) => setGender(label)}
           onClose={() => setShowGender(false)}
@@ -429,7 +577,7 @@ export default function Signup({ navigation }: { navigation: any }) {
         <OptionSheet
           visible={showIncome}
           title="Annual Family Income"
-          options={INCOME_BANDS}
+          options={catalogOptions.income}
           value={income}
           onSelect={(_id, label) => setIncome(label)}
           onClose={() => setShowIncome(false)}
@@ -438,7 +586,7 @@ export default function Signup({ navigation }: { navigation: any }) {
         <OptionSheet
           visible={showRation}
           title="Ration Card"
-          options={RATION_CARDS}
+          options={catalogOptions.rationCard}
           value={rationCard}
           onSelect={(_id, label) => setRationCard(label)}
           onClose={() => setShowRation(false)}
@@ -447,7 +595,7 @@ export default function Signup({ navigation }: { navigation: any }) {
         <OptionSheet
           visible={showInsurance}
           title="Health Insurance"
-          options={INSURANCE_STATUS}
+          options={catalogOptions.insurance}
           value={insurance}
           onSelect={(_id, label) => setInsurance(label)}
           onClose={() => setShowInsurance(false)}
@@ -471,6 +619,7 @@ export default function Signup({ navigation }: { navigation: any }) {
             onClose={() => setShowDatePicker(false)}
           />
         )}
+        <RegistrationLoader visible={loading} />
       </SafeAreaView>
     </ScreenWash>
   );

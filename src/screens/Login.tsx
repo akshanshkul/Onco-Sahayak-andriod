@@ -6,19 +6,127 @@ import {
   Pressable,
   ScrollView,
   KeyboardAvoidingView,
+  Keyboard,
   Platform,
   useWindowDimensions,
+  Alert,
+  Modal,
+  TextInput,
 } from "react-native";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, loginWash, loginHeroTop } from "../theme";
 import { IMG } from "../assets";
-import { CTA, Card, Field, OrDivider } from "../components/ui";
+import { CTA, Field } from "../components/ui";
 import { LinearGradient } from "expo-linear-gradient";
+import {
+  changeForgottenPassword,
+  login,
+  requestPasswordResetOtp,
+  verifyPasswordResetOtp,
+} from "../services/api";
 export default function Login({ navigation }: { navigation: any }) {
   const [identifier, setIdentifier] = useState("");
   const [password, setPassword] = useState("");
   const [hidden, setHidden] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [requestingReset, setRequestingReset] = useState(false);
+  const [resetVisible, setResetVisible] = useState(false);
+  const [resetStep, setResetStep] = useState<"identifier" | "otp" | "password">("identifier");
+  const [resetIdentifier, setResetIdentifier] = useState("");
+  const [resetCode, setResetCode] = useState("");
+  const [resetPassword, setResetPassword] = useState("");
+  const [resetConfirmPassword, setResetConfirmPassword] = useState("");
+  const [resetChallengeId, setResetChallengeId] = useState("");
+  const [keyboardHeight, setKeyboardHeight] = useState(0);
+
+  React.useEffect(() => {
+    const showEvent = Platform.OS === "ios" ? "keyboardWillShow" : "keyboardDidShow";
+    const hideEvent = Platform.OS === "ios" ? "keyboardWillHide" : "keyboardDidHide";
+    const showSubscription = Keyboard.addListener(showEvent, (event) => {
+      setKeyboardHeight(event.endCoordinates.height);
+    });
+    const hideSubscription = Keyboard.addListener(hideEvent, () => setKeyboardHeight(0));
+    return () => {
+      showSubscription.remove();
+      hideSubscription.remove();
+    };
+  }, []);
+
+  const submitLogin = async () => {
+    if (loading) return;
+    setLoading(true);
+    try {
+      await login(identifier, password);
+      navigation.replace("Main");
+    } catch (error) {
+      Alert.alert("Login failed", error instanceof Error ? error.message : "Please try again");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const submitForgotPassword = () => {
+    setResetIdentifier(identifier.trim());
+    setResetStep("identifier");
+    setResetVisible(true);
+  };
+
+  const sendResetCode = async () => {
+    if (!resetIdentifier.trim()) {
+      Alert.alert("Enter your email or mobile", "Enter the email or mobile number used for your account.");
+      return;
+    }
+    setRequestingReset(true);
+    try {
+      const response = await requestPasswordResetOtp(resetIdentifier.trim());
+      setResetChallengeId(response.data?.challengeId || "");
+      setResetStep("otp");
+      Alert.alert("Code sent", "We sent a verification code to the email linked to your account.");
+    } catch (error) {
+      Alert.alert("Unable to send code", error instanceof Error ? error.message : "Please try again");
+    } finally {
+      setRequestingReset(false);
+    }
+  };
+
+  const verifyResetCode = async () => {
+    if (!resetChallengeId || !/^\d{6}$/.test(resetCode.trim())) {
+      Alert.alert("Enter the OTP", "Enter the 6-digit code sent to your email.");
+      return;
+    }
+    setRequestingReset(true);
+    try {
+      await verifyPasswordResetOtp(resetChallengeId, resetCode.trim());
+      setResetStep("password");
+    } catch (error) {
+      Alert.alert("Verification failed", error instanceof Error ? error.message : "Please try again");
+    } finally {
+      setRequestingReset(false);
+    }
+  };
+
+  const changeResetPassword = async () => {
+    if (resetPassword.length < 8) {
+      Alert.alert("Password too short", "Password must be at least 8 characters.");
+      return;
+    }
+    if (resetPassword !== resetConfirmPassword) {
+      Alert.alert("Passwords do not match", "Enter the same password in both fields.");
+      return;
+    }
+    setRequestingReset(true);
+    try {
+      await changeForgottenPassword(resetChallengeId, resetCode.trim(), resetPassword);
+      setResetVisible(false);
+      setPassword("");
+      Alert.alert("Password changed", "Your password was changed successfully. Please log in again.");
+    } catch (error) {
+      Alert.alert("Password change failed", error instanceof Error ? error.message : "Please try again");
+    } finally {
+      setRequestingReset(false);
+    }
+  };
 
   const { width, height } = useWindowDimensions();
   const insets = useSafeAreaInsets();
@@ -110,47 +218,15 @@ export default function Login({ navigation }: { navigation: any }) {
                 onRightIconPress={() => setHidden((v) => !v)}
               />
 
-              <Pressable className="mt-2.5 self-end" hitSlop={8}>
+              <Pressable className="mt-2.5 self-end" hitSlop={8} onPress={submitForgotPassword}>
                 <Text className="text-[13px] font-bold" style={{ color: colors.primary }}>
-                  Forgot Password?
+                  {requestingReset ? "Sending..." : "Forgot Password?"}
                 </Text>
               </Pressable>
 
               <View style={{ marginTop: compact ? 12 : 18 }}>
-                <CTA label="Login" chevron onPress={() => navigation.replace("Main")} />
+                <CTA label={loading ? "Logging in..." : "Login"} chevron onPress={submitLogin} />
               </View>
-
-              <OrDivider spacing={compact ? 10 : 18} />
-
-              <Pressable onPress={() => navigation.replace("Main")}>
-                <Card className="flex-row items-center justify-center">
-                  <View style={{ paddingVertical: compact ? 11 : 14 }} className="flex-row items-center">
-                    <Ionicons name="logo-google" size={20} color="#DB4437" />
-                    <Text
-                      className="ml-2.5 text-[15px] font-bold"
-                      style={{ color: colors.navy }}
-                    >
-                      Continue with Google
-                    </Text>
-                  </View>
-                </Card>
-              </Pressable>
-
-              <View style={{ height: compact ? 8 : 12 }} />
-
-              <Pressable onPress={() => navigation.replace("Main")}>
-                <Card className="flex-row items-center justify-center">
-                  <View style={{ paddingVertical: compact ? 11 : 14 }} className="flex-row items-center">
-                    <Ionicons name="phone-portrait-outline" size={20} color={colors.navy} />
-                    <Text
-                      className="ml-2.5 text-[15px] font-bold"
-                      style={{ color: colors.navy }}
-                    >
-                      Continue with Mobile OTP
-                    </Text>
-                  </View>
-                </Card>
-              </Pressable>
 
               <View
                 className="flex-row justify-center"
@@ -185,6 +261,70 @@ export default function Login({ navigation }: { navigation: any }) {
           </View>
         </KeyboardAvoidingView>
       </SafeAreaView>
+      <Modal visible={resetVisible} transparent animationType="slide" onRequestClose={() => setResetVisible(false)}>
+        <View className="flex-1 justify-end bg-black/30">
+          <View
+            className="rounded-t-3xl bg-white px-6 pt-6"
+            style={{ paddingBottom: 40 + keyboardHeight }}
+          >
+            <View className="mb-5 flex-row items-center justify-between">
+              <Text className="text-xl font-extrabold" style={{ color: colors.navy }}>
+                {resetStep === "identifier" ? "Reset password" : resetStep === "otp" ? "Verify email" : "Create new password"}
+              </Text>
+              <Pressable onPress={() => setResetVisible(false)} hitSlop={10}>
+                <Ionicons name="close" size={25} color={colors.navy} />
+              </Pressable>
+            </View>
+            {resetStep === "identifier" && (
+              <>
+                <Text className="mb-3 text-slate-500">Enter your registered email or mobile number. We will send the OTP to your email.</Text>
+                <TextInput
+                  value={resetIdentifier}
+                  onChangeText={setResetIdentifier}
+                  placeholder="Email or Mobile Number"
+                  autoCapitalize="none"
+                  keyboardType="email-address"
+                  className="mb-4 rounded-2xl border border-slate-200 px-4 py-3"
+                />
+                <CTA label={requestingReset ? "Sending..." : "Send OTP"} onPress={sendResetCode} chevron />
+              </>
+            )}
+            {resetStep === "otp" && (
+              <>
+                <Text className="mb-3 text-slate-500">Enter the 6-digit OTP sent to your email.</Text>
+                <TextInput
+                  value={resetCode}
+                  onChangeText={setResetCode}
+                  placeholder="6-digit OTP"
+                  keyboardType="number-pad"
+                  maxLength={6}
+                  className="mb-4 rounded-2xl border border-slate-200 px-4 py-3 text-center text-lg tracking-widest"
+                />
+                <CTA label={requestingReset ? "Verifying..." : "Verify OTP"} onPress={verifyResetCode} chevron />
+              </>
+            )}
+            {resetStep === "password" && (
+              <>
+                <TextInput
+                  value={resetPassword}
+                  onChangeText={setResetPassword}
+                  placeholder="New password"
+                  secureTextEntry
+                  className="mb-3 rounded-2xl border border-slate-200 px-4 py-3"
+                />
+                <TextInput
+                  value={resetConfirmPassword}
+                  onChangeText={setResetConfirmPassword}
+                  placeholder="Confirm new password"
+                  secureTextEntry
+                  className="mb-4 rounded-2xl border border-slate-200 px-4 py-3"
+                />
+                <CTA label={requestingReset ? "Changing..." : "Change Password"} onPress={changeResetPassword} chevron />
+              </>
+            )}
+          </View>
+        </View>
+      </Modal>
     </LinearGradient>
   );
 }

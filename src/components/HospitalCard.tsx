@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../theme";
 import { Card, Tag } from "./ui";
@@ -16,12 +16,15 @@ export default function HospitalCard({
   return (
     <Pressable onPress={onPress} className="mb-3">
       <Card className="flex-row items-center p-3">
-        {/* Photo slot — replace with <Image source={...} /> once artwork exists. */}
         <View
           className="h-[68px] w-[68px] items-center justify-center rounded-2xl"
           style={{ backgroundColor: "#E6F1FD" }}
         >
-          <Ionicons name="business" size={28} color={colors.blue} />
+          {hospital.bannerUrl ? (
+            <Image source={{ uri: hospital.bannerUrl }} className="h-full w-full rounded-2xl" resizeMode="cover" />
+          ) : (
+            <Ionicons name="business" size={28} color={colors.blue} />
+          )}
         </View>
 
         <View className="ml-3 flex-1">

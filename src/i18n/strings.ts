@@ -909,38 +909,6 @@ export const STRINGS = {
     as: "অথবা",
   },
 
-  "login.google": {
-    en: "Continue with Google",
-    hi: "Google से जारी रखें",
-    pa: "Google ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
-    bn: "Google দিয়ে চালিয়ে যান",
-    gu: "Google સાથે ચાલુ રાખો",
-    mr: "Google सह सुरू ठेवा",
-    ta: "Google மூலம் தொடரவும்",
-    te: "Googleతో కొనసాగించండి",
-    kn: "Google ಮೂಲಕ ಮುಂದುವರಿಸಿ",
-    ml: "Google ഉപയോഗിച്ച് തുടരുക",
-    or: "Google ସହିତ ଜାରି ରଖନ୍ତୁ",
-    ur: "Google کے ساتھ جاری رکھیں",
-    as: "Google-ৰ সৈতে আগবাঢ়ক",
-  },
-
-  "login.otp": {
-    en: "Continue with Mobile OTP",
-    hi: "मोबाइल OTP से जारी रखें",
-    pa: "ਮੋਬਾਈਲ OTP ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
-    bn: "মোবাইল OTP দিয়ে চালিয়ে যান",
-    gu: "મોબાઇલ OTP સાથે ચાલુ રાખો",
-    mr: "मोबाईल OTP सह सुरू ठेवा",
-    ta: "மொபைல் OTP மூலம் தொடரவும்",
-    te: "మొబైల్ OTPతో కొనసాగించండి",
-    kn: "ಮೊಬೈಲ್ OTP ಮೂಲಕ ಮುಂದುವರಿಸಿ",
-    ml: "മൊബൈൽ OTP ഉപയോഗിച്ച് തുടരുക",
-    or: "ମୋବାଇଲ୍ OTP ସହିତ ଜାରି ରଖନ୍ତୁ",
-    ur: "موبائل OTP کے ساتھ جاری رکھیں",
-    as: "মোবাইল OTP-ৰ সৈতে আগবাঢ়ক",
-  },
-
   "login.noAccount": {
     en: "Don’t have an account? ",
     hi: "खाता नहीं है? ",

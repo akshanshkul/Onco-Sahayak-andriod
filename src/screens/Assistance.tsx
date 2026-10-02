@@ -1,13 +1,14 @@
 import React, { useMemo, useState } from "react";
-import { View, Text, Image, ScrollView, Pressable, TextInput } from "react-native";
+import { View, Text, Image, ScrollView, Pressable, TextInput, RefreshControl } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../theme";
 import { IMG } from "../assets";
-import { ngos, assistanceFilters, assistanceFilterMap, type Ngo } from "../data/ngos";
-import { Card, Chip, IconTile, LocationPill, Tag } from "../components/ui";
+import { assistanceFilters, assistanceFilterMap, type Ngo } from "../data/ngos";
+import { Card, Chip, IconTile, LocationPill, SkeletonCard, Tag } from "../components/ui";
 import { OptionSheet } from "../components/pickers";
 import LocationSheet from "../components/LocationSheet";
 import { useT } from "../i18n";
+import { clearCatalogCache, getAssistancePrograms } from "../services/api";
 
 const SORTS = [
   "Recommended",
@@ -93,7 +94,43 @@ export default function Assistance({ navigation }: { navigation: any }) {
   const [sort, setSort] = useState(SORTS[0]);
   const [showSort, setShowSort] = useState(false);
   const [showLocation, setShowLocation] = useState(false);
+  const [ngos, setNgos] = useState<Ngo[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
   const tr = useT();
+
+  const loadAssistance = async (hardRefresh = false) => {
+    if (hardRefresh) {
+      clearCatalogCache();
+      setRefreshing(true);
+    }
+    try {
+      const items = await getAssistancePrograms();
+      setNgos(items.map((item) => ({
+        ...item,
+        kindLabel: item.kindLabel || item.kind_label,
+        logoIcon: item.kind === "Government" ? "shield-checkmark" : item.kind === "Trust" ? "business" : "ribbon",
+        logoTone: item.kind === "Government" ? "green" : item.kind === "Trust" ? "sky" : "rose",
+        amountLabel: item.amountLabel || item.amount_label,
+        processingTime: item.processingTime || item.processing_time,
+        howToApply: item.howToApply || item.how_to_apply || [],
+        coverage: item.coverage || [],
+        eligibility: item.eligibility || [],
+        documents: item.documents || [],
+        contactEmail: item.contactEmail || item.contact_email || "",
+        bannerUrl: item.bannerUrl || item.banner_url || "",
+      })) as Ngo[]);
+    } catch {
+      setNgos([]);
+    } finally {
+      setLoading(false);
+      setRefreshing(false);
+    }
+  };
+
+  React.useEffect(() => {
+    loadAssistance();
+  }, []);
 
   const list = useMemo(() => {
     const kinds = assistanceFilterMap[filter];
@@ -118,10 +155,11 @@ export default function Assistance({ navigation }: { navigation: any }) {
       );
     }
     return matched;
-  }, [filter, q, sort]);
+  }, [ngos, filter, q, sort]);
 
   return (
     <ScrollView
+      refreshControl={<RefreshControl refreshing={refreshing} onRefresh={() => loadAssistance(true)} tintColor={colors.primary} colors={[colors.primary]} />}
       className="flex-1"
       contentContainerStyle={{ paddingBottom: 24 }}
       showsVerticalScrollIndicator={false}
@@ -209,6 +247,7 @@ export default function Assistance({ navigation }: { navigation: any }) {
 
       {/* Results */}
       <View className="mt-4 px-4">
+        {loading && <><SkeletonCard /><SkeletonCard /></>}
         <Text className="mb-2 text-[12px] text-slate-500">
           {list.length} {list.length === 1 ? tr("common.result") : tr("common.results")}
           {filter !== "All" ? ` in ${filter}` : ""}

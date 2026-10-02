@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { View, Text, ScrollView, Pressable, TextInput } from "react-native";
+import { View, Text, ScrollView, Pressable, TextInput, RefreshControl, Alert } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../theme";
-import { hospitals } from "../data/hospitals";
+import { type Hospital } from "../data/hospitals";
 import HospitalCard from "../components/HospitalCard";
 import LocationSheet from "../components/LocationSheet";
 import { useLocation } from "../location";
@@ -12,8 +13,10 @@ import {
   IconTile,
   SectionTitle,
   ScriptText,
+  SkeletonCard,
   type IconName,
 } from "../components/ui";
+import { clearCatalogCache, getCachedProfile, getHospitals, getProfile } from "../services/api";
 
 const QUICK: { key: any; icon: IconName; tone: any; tab: string }[] = [
   { key: "nav.hospitals", icon: "business", tone: "sky", tab: "Hospitals" },
@@ -32,9 +35,50 @@ export default function Home({
   const { location } = useLocation();
   const tr = useT();
   const [showLocation, setShowLocation] = useState(false);
+  const [hospitals, setHospitals] = useState<Hospital[]>([]);
+  const [hospitalsLoading, setHospitalsLoading] = useState(true);
+  const [fullName, setFullName] = useState(getCachedProfile()?.fullName || "");
+  const [authenticated, setAuthenticated] = useState(Boolean(getCachedProfile()));
+  const [refreshing, setRefreshing] = useState(false);
+
+  const refreshHospitals = async () => {
+    setRefreshing(true);
+    clearCatalogCache();
+    try {
+      setHospitals((await getHospitals()) as Hospital[]);
+    } catch (error) {
+      Alert.alert("Unable to refresh hospitals", error instanceof Error ? error.message : "Please try again.");
+    } finally {
+      setRefreshing(false);
+    }
+  };
+
+  React.useEffect(() => {
+    getHospitals().then((items) => setHospitals(items as Hospital[])).catch(() => setHospitals([])).finally(() => setHospitalsLoading(false));
+  }, []);
+
+  React.useEffect(() => {
+    let active = true;
+    AsyncStorage.getItem("auth_token").then((token) => {
+      if (!active) return;
+      setAuthenticated(Boolean(token));
+      if (!token || fullName) return;
+      getProfile()
+        .then((profile) => {
+          if (active) setFullName(typeof profile.fullName === "string" ? profile.fullName : "");
+        })
+        .catch(() => {
+          // Home remains usable when a logged-out session has no profile.
+        });
+    });
+    return () => {
+      active = false;
+    };
+  }, [fullName]);
 
   return (
     <ScrollView
+      refreshControl={<RefreshControl refreshing={refreshing} onRefresh={refreshHospitals} tintColor={colors.primary} colors={[colors.primary]} />}
       className="flex-1"
       contentContainerStyle={{ padding: 16, paddingBottom: 24 }}
       showsVerticalScrollIndicator={false}
@@ -50,9 +94,17 @@ export default function Home({
           </View>
           <View className="ml-3">
             <Text className="text-[12px] text-slate-500">{tr("home.hello")}</Text>
-            <Text className="text-[17px] font-bold" style={{ color: colors.navy }}>
-              Ravi Sharma
-            </Text>
+            {authenticated ? (
+              <Text className="text-[17px] font-bold" style={{ color: colors.navy }}>
+                {fullName || "Onco user"}
+              </Text>
+            ) : (
+              <Pressable onPress={() => navigation?.navigate("Login")} hitSlop={8}>
+                <Text className="text-[15px] font-bold" style={{ color: colors.primary }}>
+                  Log in to personalize
+                </Text>
+              </Pressable>
+            )}
           </View>
         </View>
         <Pressable hitSlop={10}>
@@ -149,6 +201,7 @@ export default function Home({
           action={tr("common.viewAll")}
           onAction={() => onTab?.("Hospitals")}
         />
+        {hospitalsLoading && <><SkeletonCard /><SkeletonCard /></>}
         {hospitals.slice(0, 2).map((h) => (
           <HospitalCard
             key={h.id}

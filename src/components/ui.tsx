@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   View,
   Text,
@@ -6,6 +6,7 @@ import {
   TextInput,
   TextInputProps,
   ViewProps,
+  Animated,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
@@ -14,6 +15,56 @@ import { useLocation } from "../location";
 import Logo from "./Logo";
 
 export type IconName = React.ComponentProps<typeof Ionicons>["name"];
+
+export function Skeleton({
+  width = "100%",
+  height = 16,
+  radius = 8,
+  className = "",
+}: {
+  width?: number | `${number}%`;
+  height?: number;
+  radius?: number;
+  className?: string;
+}) {
+  const opacity = useRef(new Animated.Value(0.45)).current;
+
+  useEffect(() => {
+    const animation = Animated.loop(
+      Animated.sequence([
+        Animated.timing(opacity, { toValue: 0.9, duration: 650, useNativeDriver: true }),
+        Animated.timing(opacity, { toValue: 0.45, duration: 650, useNativeDriver: true }),
+      ])
+    );
+    animation.start();
+    return () => animation.stop();
+  }, [opacity]);
+
+  return (
+    <Animated.View
+      className={className}
+      style={{ width, height, borderRadius: radius, backgroundColor: "#DCE7F0", opacity }}
+    />
+  );
+}
+
+export function SkeletonCard({ lines = 3 }: { lines?: number }) {
+  return (
+    <Card className="mb-3 p-3.5">
+      <View className="flex-row">
+        <Skeleton width={52} height={52} radius={16} />
+        <View className="ml-3 flex-1">
+          <Skeleton width="72%" height={15} />
+          <Skeleton width="42%" height={11} className="mt-2" />
+          <Skeleton width="92%" height={11} className="mt-2" />
+        </View>
+      </View>
+      {Array.from({ length: lines }).map((_, index) => (
+        <Skeleton key={index} width={index === lines - 1 ? "58%" : "84%"} height={11} className="mt-2" />
+      ))}
+    </Card>
+  );
+}
 
 /** Soft gradient page background used by every screen in the designs. */
 export function ScreenWash({ children, style }: ViewProps) {

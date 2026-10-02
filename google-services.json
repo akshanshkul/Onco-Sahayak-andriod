@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "290006199069",
+    "project_id": "hope-care-96eab",
+    "storage_bucket": "hope-care-96eab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290006199069:android:8c26f939ba4fee3dc78ff4",
+        "android_client_info": {
+          "package_name": "com.hopecare.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK35KaHt1J5V3uDipUdv5X8DKc3EACgpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
