@@ -1,5 +1,73 @@
+# Dependencies
 node_modules/
+
+# Expo
 .expo/
+.expo-shared/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Expo / React Native
+web-build/
 dist/
-*.log
+
+# Native build files
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties/
+
+ios/Pods/
+ios/build/
+ios/DerivedData/
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Metro
+.metro-health-check*
+
+# Testing / coverage
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+
+# Expo generated files
+.expo/
+.expo-shared/
+
+# EAS
+.eas/
+.easignore
+
+# Local certificates / keys
+*.p12
+*.p8
+*.jks
+*.keystore
+
+# Sensitive Google/Firebase configuration
+google-services.json
+GoogleService-Info.plist
+
+# Misc
+*.log
